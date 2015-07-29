@@ -1,0 +1,21 @@
+{
+  "modListVersion": 2,
+  "modList": [{
+    "modid": "tfcadditions",
+    "name": "TFC-Additions",
+    "description": "Additions to TerraFirmaCraft",
+    "version": "${mod_version}",
+    "mcversion": "${minecraft_version}",
+    "url" : "http://interburn.org",
+    "updateUrl": "http://interburn.org",
+    "authorList": [ "raymondbh" ],
+    "credits": "http://interburn.org",
+    "logoFile": "",
+    "screenshots": [  ],
+    "parent": "",
+    "requiredMods": [ "terrafirmacraft" ],
+    "dependencies": ["Forge@[10.13.4.1448,)"],
+    "dependants": [  ],
+    "useDependencyInformation": "true"
+  }]
+}

@@ -1,0 +1,31 @@
+﻿#en_US
+#This is the Main language configuration file
+#
+#If you want to color code the text then I recommend you visit http://www.minecraftwiki.net/wiki/Formatting_codes#Color_codes
+#To create the § symbol which is used for assigning a color to the following text press Alt + 21 on Windows. For other OSes, view the above link.
+#This file needs to be UTF-8 encoded to work with MC 1.7+
+
+tile.MMRockDent.Gneiss.name=Gneiss with Dent
+tile.MMRockDent.Marble.name=Marble with Dent
+tile.MMRockDent.Phyllite.name=Phyllite with Dent
+tile.MMRockDent.Quartzite.name=Quartzite with Dent
+tile.MMRockDent.Schist.name=Schist with Dent
+tile.MMRockDent.Slate.name=Slate with Dent
+
+tile.IgExRockDent.Andesite.name=Andesite
+tile.IgExRockDent.Basalt.name=Basalt
+tile.IgExRockDent.Dacite.name=Dacite
+tile.IgExRockDent.Rhyolite.name=Rhyolite
+
+tile.IgInRockDent.Diorite.name=Diorite
+tile.IgInRockDent.Gabbro.name=Gabbro
+tile.IgInRockDent.Granite.name=Granite
+
+tile.SedRockDent.Chalk.name=Chalk
+tile.SedRockDent.Chert.name=Chert
+tile.SedRockDent.Claystone.name=Claystone
+tile.SedRockDent.Conglomerate.name=Conglomerate
+tile.SedRockDent.Dolomite.name=Dolomite
+tile.SedRockDent.Limestone.name=Limestone
+tile.SedRockDent.Rock Salt.name=Rock Salt
+tile.SedRockDent.Shale.name=Shale
