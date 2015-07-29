@@ -30,6 +30,7 @@ public class SubmapManCTM extends SubmapManagerCTM {
     private String chiselType;
 
     public SubmapManCTM(String[] names, String block, String chisel) {
+        super("dummy");
         blockNames = names;
         blockType = block;
         chiselType = chisel;
@@ -49,6 +50,7 @@ public class SubmapManCTM extends SubmapManagerCTM {
         }
     }
 
+    @Override
     @SideOnly(Side.CLIENT)
     public RenderBlocks createRenderContext(RenderBlocks rendererOld, Block block, IBlockAccess world, int meta) {
         if (rb == null) {

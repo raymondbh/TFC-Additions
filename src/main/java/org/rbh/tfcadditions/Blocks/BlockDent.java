@@ -18,6 +18,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import org.rbh.tfcadditions.Api.SubmapManCTM;
 import org.rbh.tfcadditions.Proxy.ClientProxy;
 import org.rbh.tfcadditions.Reference.Reference;
 
@@ -61,7 +62,7 @@ public class BlockDent extends BlockTerra implements ICTMBlock {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        manager = new SubmapManagerCTM(names, "rocks", "Dent");
+        manager = new SubmapManCTM(names, "rocks", "Dent");
         manager.registerIcons(Reference.ModID, this, iconRegister);
     }
 
