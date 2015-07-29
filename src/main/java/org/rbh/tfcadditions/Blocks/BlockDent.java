@@ -5,7 +5,6 @@ import com.bioxx.tfc.Items.Tools.ItemHammer;
 import com.bioxx.tfc.api.Tools.IToolChisel;
 import com.cricketcraft.ctmlib.ICTMBlock;
 import com.cricketcraft.ctmlib.ISubmapManager;
-import com.cricketcraft.ctmlib.SubmapManagerCTM;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -22,6 +21,7 @@ import org.rbh.tfcadditions.Api.SubmapManCTM;
 import org.rbh.tfcadditions.Proxy.ClientProxy;
 import org.rbh.tfcadditions.Reference.Reference;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -30,7 +30,7 @@ import java.util.List;
 public class BlockDent extends BlockTerra implements ICTMBlock {
 
     @SideOnly(Side.CLIENT)
-    private SubmapManagerCTM manager;
+    private List<SubmapManCTM> manager = new ArrayList<SubmapManCTM>();
 
     protected BlockDent(Material material)
     {
@@ -62,20 +62,23 @@ public class BlockDent extends BlockTerra implements ICTMBlock {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        manager = new SubmapManCTM(names, "rocks", "Dent");
-        manager.registerIcons(Reference.ModID, this, iconRegister);
+        for(int i = 0; i < names.length; i++) {
+            manager.add(i, new SubmapManCTM(names[i], "rocks", "Dent"));
+            manager.get(i).registerIcons(Reference.ModID, this, iconRegister);
+        }
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
-        return manager.getIcon(world, x, y, z, side);
+        int meta = world.getBlockMetadata(x, y, z);
+        return manager.get(meta).getIcon(world, x, y, z, side);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        return manager.getIcon(side, meta);
+        return manager.get(meta).getIcon(side, meta);
     }
 
     @Override
@@ -108,11 +111,11 @@ public class BlockDent extends BlockTerra implements ICTMBlock {
 
     @Override
     public ISubmapManager getManager(IBlockAccess world, int x, int y, int z, int meta) {
-        return manager;
+        return manager.get(meta);
     }
 
     @Override
     public ISubmapManager getManager(int meta) {
-        return manager;
+        return manager.get(meta);
     }
 }
