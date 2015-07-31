@@ -12,20 +12,27 @@ tile.MMRockDent.Quartzite.name=Quartzite with Dent
 tile.MMRockDent.Schist.name=Schist with Dent
 tile.MMRockDent.Slate.name=Slate with Dent
 
-tile.IgExRockDent.Andesite.name=Andesite
-tile.IgExRockDent.Basalt.name=Basalt
-tile.IgExRockDent.Dacite.name=Dacite
-tile.IgExRockDent.Rhyolite.name=Rhyolite
+tile.MMRockDentSmall.Gneiss.name=Gneiss with small Dent
+tile.MMRockDentSmall.Marble.name=Marble with small Dent
+tile.MMRockDentSmall.Phyllite.name=Phyllite with small Dent
+tile.MMRockDentSmall.Quartzite.name=Quartzite with small Dent
+tile.MMRockDentSmall.Schist.name=Schist with small Dent
+tile.MMRockDentSmall.Slate.name=Slate with small Dent
 
-tile.IgInRockDent.Diorite.name=Diorite
-tile.IgInRockDent.Gabbro.name=Gabbro
-tile.IgInRockDent.Granite.name=Granite
+tile.IgExRockDent.Andesite.name=Andesite with Dent
+tile.IgExRockDent.Basalt.name=Basalt with Dent
+tile.IgExRockDent.Dacite.name=Dacite with Dent
+tile.IgExRockDent.Rhyolite.name=Rhyolite with Dent
 
-tile.SedRockDent.Chalk.name=Chalk
-tile.SedRockDent.Chert.name=Chert
-tile.SedRockDent.Claystone.name=Claystone
-tile.SedRockDent.Conglomerate.name=Conglomerate
-tile.SedRockDent.Dolomite.name=Dolomite
-tile.SedRockDent.Limestone.name=Limestone
-tile.SedRockDent.Rock Salt.name=Rock Salt
-tile.SedRockDent.Shale.name=Shale
+tile.IgInRockDent.Diorite.name=Diorite with Dent
+tile.IgInRockDent.Gabbro.name=Gabbro with Dent
+tile.IgInRockDent.Granite.name=Granite with Dent
+
+tile.SedRockDent.Chalk.name=Chalk with Dent
+tile.SedRockDent.Chert.name=Chert with Dent
+tile.SedRockDent.Claystone.name=Claystone with Dent
+tile.SedRockDent.Conglomerate.name=Conglom with Denteratev
+tile.SedRockDent.Dolomite.name=Dolomite with Dent
+tile.SedRockDent.Limestone.name=Limestone with Dent
+tile.SedRockDent.Rock Salt.name=Rock Salt with Dent
+tile.SedRockDent.Shale.name=Shale with Dent

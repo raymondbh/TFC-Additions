@@ -6,6 +6,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import org.rbh.tfcadditions.Blocks.BlockSetup;
 import org.rbh.tfcadditions.Tools.ChiselMode_Dent;
+import org.rbh.tfcadditions.Tools.ChiselMode_DentSmall;
 
 /**
  * Created by raymondbh on 15.07.2015.
@@ -19,6 +20,7 @@ public class CommonProxy {
 
     public void Init(FMLInitializationEvent event){
         ChiselManager.getInstance().addChiselMode(new ChiselMode_Dent("Dent"));
+        ChiselManager.getInstance().addChiselMode(new ChiselMode_DentSmall("DentSmall"));
     }
 
     public void postInit(FMLPostInitializationEvent event){

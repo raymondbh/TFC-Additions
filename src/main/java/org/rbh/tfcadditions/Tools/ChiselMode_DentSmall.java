@@ -12,17 +12,17 @@ import org.rbh.tfcadditions.Blocks.BlockSetup;
 import org.rbh.tfcadditions.Reference.Reference;
 
 /**
- * Created by raymondbh on 15.07.2015.
+ * Created by rbh on 31.07.2015.
  */
-public class ChiselMode_Dent extends ChiselMode {
+public class ChiselMode_DentSmall extends ChiselMode{
 
     private static String name;
     private static ResourceLocation resourcelocation = new ResourceLocation(Reference.ModID, Reference.AssetPathGui + "icons.png");
     private static int texture_u, texture_v, div;
 
-    public ChiselMode_Dent(String n){
+    public ChiselMode_DentSmall(String n){
         name = n;
-        texture_u = 0;
+        texture_u = 20;
         texture_v = 0;
         div = 1;
     }
@@ -80,11 +80,11 @@ public class ChiselMode_Dent extends ChiselMode {
                 world.setBlock(x, y, z, TFCBlocks.StoneIgExSmooth, meta, 0x2);
             } else if(id == TFCBlocks.StoneSed) {
                 world.setBlock(x, y, z, TFCBlocks.StoneSedSmooth, meta, 0x2);
-            } else if(id == TFCBlocks.StoneMM || id == TFCBlocks.StoneMMSmooth) {
-                world.setBlock(x, y, z, BlockSetup.StoneMMDent, meta, 0x2);
+            } else if(id == TFCBlocks.StoneMM || id == TFCBlocks.StoneMMSmooth || id == BlockSetup.StoneMMDent) {
+                world.setBlock(x, y, z, BlockSetup.StoneMMDentSmall, meta, 0x2);
             }*/
-            if(id == TFCBlocks.StoneMM || id == TFCBlocks.StoneMMSmooth || id == BlockSetup.StoneMMDentSmall) {
-                world.setBlock(x, y, z, BlockSetup.StoneMMDent, meta, 0x2);
+            if(id == TFCBlocks.StoneMM || id == TFCBlocks.StoneMMSmooth || id == BlockSetup.StoneMMDent) {
+                world.setBlock(x, y, z, BlockSetup.StoneMMDentSmall, meta, 0x2);
             }
             player.inventory.mainInventory[hasChisel].damageItem(1, player);
         }
