@@ -13,6 +13,10 @@ public class BlockSetup {
     public static Block StoneMMDentSmall;
 
     public static Block StoneIGEXDent;
+    public static Block StoneIGEXDentSmall;
+
+    public static Block StoneIGINDent;
+    public static Block StoneIGINDentSmall;
 
     public static void LoadBlocks(){
         System.out.println(new StringBuilder().append("[TFC-Addition] Loading Blocks").toString());
@@ -20,7 +24,11 @@ public class BlockSetup {
         StoneMMDent = new BlockMMDent().setHardness(15F).setBlockName("MMRockDent");
         StoneMMDentSmall = new BlockMMDentSmall().setHardness(15F).setBlockName("MMRockDentSmall");
 
-        //StoneIGEXDent = new BlockIGEXDent().setHardness(16F).setBlockName("IgExRockDent");
+        StoneIGEXDent = new BlockIGEXDent().setHardness(16F).setBlockName("IgExRockDent");
+        StoneIGEXDentSmall = new BlockIGEXDentSmall().setHardness(16F).setBlockName("IgExRockDentSmall");
+
+        StoneIGINDent = new BlockIGINDent().setHardness(16F).setBlockName("IgInRockDent");
+        StoneIGINDentSmall = new BlockIGINDentSmall().setHardness(16F).setBlockName("IgInRockDentSmall");
     }
 
     public static void RegisterBlocks(){
@@ -29,6 +37,10 @@ public class BlockSetup {
         GameRegistry.registerBlock(StoneMMDent, ItemBlock.class, "StoneMMDent");
         GameRegistry.registerBlock(StoneMMDentSmall, ItemBlock.class, "StoneMMDentSmall");
 
-        //GameRegistry.registerBlock(StoneIGEXDent, ItemBlock.class, "StoneIGEXDent");
+        GameRegistry.registerBlock(StoneIGEXDent, ItemBlock.class, "StoneIGEXDent");
+        GameRegistry.registerBlock(StoneIGEXDentSmall, ItemBlock.class, "StoneIGEXDentSmall");
+
+        GameRegistry.registerBlock(StoneIGINDent, ItemBlock.class, "StoneIGINDent");
+        GameRegistry.registerBlock(StoneIGINDentSmall, ItemBlock.class, "StoneIGINDentSmall");
     }
 }

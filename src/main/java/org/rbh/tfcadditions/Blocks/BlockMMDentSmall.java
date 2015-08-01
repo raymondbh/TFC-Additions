@@ -9,7 +9,6 @@ import org.rbh.tfcadditions.Reference.Names;
  * Created by rbh on 30.07.2015.
  */
 public class BlockMMDentSmall extends BlockDentSmall {
-
     public BlockMMDentSmall(){
         super(Material.rock);
         this.setCreativeTab(TFCTabs.TFCBuilding);

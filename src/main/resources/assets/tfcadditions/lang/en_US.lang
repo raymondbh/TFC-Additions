@@ -24,9 +24,18 @@ tile.IgExRockDent.Basalt.name=Basalt with Dent
 tile.IgExRockDent.Dacite.name=Dacite with Dent
 tile.IgExRockDent.Rhyolite.name=Rhyolite with Dent
 
+tile.IgExRockDentSmall.Andesite.name=Andesite with small Dent
+tile.IgExRockDentSmall.Basalt.name=Basalt with small Dent
+tile.IgExRockDentSmall.Dacite.name=Dacite with small Dent
+tile.IgExRockDentSmall.Rhyolite.name=Rhyolite with small Dent
+
 tile.IgInRockDent.Diorite.name=Diorite with Dent
 tile.IgInRockDent.Gabbro.name=Gabbro with Dent
 tile.IgInRockDent.Granite.name=Granite with Dent
+
+tile.IgInRockDentSmall.Diorite.name=Diorite with small Dent
+tile.IgInRockDentSmall.Gabbro.name=Gabbro with small Dent
+tile.IgInRockDentSmall.Granite.name=Granite with small Dent
 
 tile.SedRockDent.Chalk.name=Chalk with Dent
 tile.SedRockDent.Chert.name=Chert with Dent

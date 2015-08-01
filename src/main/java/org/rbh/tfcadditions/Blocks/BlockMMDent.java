@@ -9,9 +9,7 @@ import org.rbh.tfcadditions.Reference.Names;
  * Created by raymondbh on 16.07.2015.
  */
 public class BlockMMDent extends BlockDent {
-
-    public BlockMMDent()
-    {
+    public BlockMMDent()    {
         super(Material.rock);
         this.setCreativeTab(TFCTabs.TFCBuilding);
         names = Names.STONE_MM;

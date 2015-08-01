@@ -2,9 +2,7 @@ package org.rbh.tfcadditions.Items;
 
 import com.bioxx.tfc.Items.ItemBlocks.ItemTerraBlock;
 import net.minecraft.block.Block;
-import org.rbh.tfcadditions.Blocks.BlockIGEXDent;
-import org.rbh.tfcadditions.Blocks.BlockMMDent;
-import org.rbh.tfcadditions.Blocks.BlockMMDentSmall;
+import org.rbh.tfcadditions.Blocks.*;
 import org.rbh.tfcadditions.Reference.Names;
 
 /**
@@ -16,5 +14,8 @@ public class ItemBlock extends ItemTerraBlock {
         if(block instanceof BlockMMDent) MetaNames = Names.STONE_MM;
         else if(block instanceof BlockMMDentSmall) MetaNames = Names.STONE_MM;
         else if(block instanceof BlockIGEXDent) MetaNames = Names.STONE_IGEX;
+        else if(block instanceof BlockIGEXDentSmall) MetaNames = Names.STONE_IGEX;
+        else if(block instanceof BlockIGINDent) MetaNames = Names.STONE_IGIN;
+        else if(block instanceof BlockIGINDentSmall) MetaNames = Names.STONE_IGIN;
     }
 }
