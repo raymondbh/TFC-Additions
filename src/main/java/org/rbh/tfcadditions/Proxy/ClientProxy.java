@@ -12,6 +12,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class ClientProxy extends CommonProxy {
 
     public static int CTMRendrerID;
+    //public static int SlopeRendrerID;
 
     @Override
     public void preInit(FMLPreInitializationEvent event){
@@ -21,8 +22,12 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void Init(FMLInitializationEvent event){
         super.Init(event);
+
         CTMRendrerID = RenderingRegistry.getNextAvailableRenderId();
+        //SlopeRendrerID = RenderingRegistry.getNextAvailableRenderId();
+
         RenderingRegistry.registerBlockHandler(new CTMRenderer(CTMRendrerID));
+        //RenderingRegistry.registerBlockHandler(SlopeRendrerID, new BlockHandlerCarpentersSlope());
     }
 
     @Override

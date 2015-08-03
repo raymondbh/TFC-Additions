@@ -1,4 +1,4 @@
-package org.rbh.tfcadditions.Blocks;
+package org.rbh.tfcadditions.Blocks.DentSmall;
 
 import com.bioxx.tfc.Core.TFCTabs;
 import net.minecraft.block.material.Material;
@@ -9,7 +9,7 @@ import org.rbh.tfcadditions.Reference.Names;
  * Created by rbh on 01.08.2015.
  */
 public class BlockIGEXDentSmall extends BlockDentSmall {
-    protected BlockIGEXDentSmall() {
+    public BlockIGEXDentSmall() {
         super(Material.rock);
         this.setCreativeTab(TFCTabs.TFCBuilding);
         names = Names.STONE_IGEX;

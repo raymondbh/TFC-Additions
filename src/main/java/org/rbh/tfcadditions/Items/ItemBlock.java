@@ -2,7 +2,12 @@ package org.rbh.tfcadditions.Items;
 
 import com.bioxx.tfc.Items.ItemBlocks.ItemTerraBlock;
 import net.minecraft.block.Block;
-import org.rbh.tfcadditions.Blocks.*;
+import org.rbh.tfcadditions.Blocks.Dent.BlockIGEXDent;
+import org.rbh.tfcadditions.Blocks.Dent.BlockIGINDent;
+import org.rbh.tfcadditions.Blocks.Dent.BlockMMDent;
+import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGEXDentSmall;
+import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGINDentSmall;
+import org.rbh.tfcadditions.Blocks.DentSmall.BlockMMDentSmall;
 import org.rbh.tfcadditions.Reference.Names;
 
 /**

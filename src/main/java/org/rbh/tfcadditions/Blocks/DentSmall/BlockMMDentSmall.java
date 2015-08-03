@@ -1,4 +1,4 @@
-package org.rbh.tfcadditions.Blocks;
+package org.rbh.tfcadditions.Blocks.DentSmall;
 
 import com.bioxx.tfc.Core.TFCTabs;
 import net.minecraft.block.material.Material;
