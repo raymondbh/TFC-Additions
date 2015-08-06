@@ -5,9 +5,11 @@ import net.minecraft.block.Block;
 import org.rbh.tfcadditions.Blocks.Dent.BlockIGEXDent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockIGINDent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockMMDent;
+import org.rbh.tfcadditions.Blocks.Dent.BlockSEDDent;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGEXDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGINDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockMMDentSmall;
+import org.rbh.tfcadditions.Blocks.DentSmall.BlockSEDDentSmall;
 import org.rbh.tfcadditions.Items.ItemBlock;
 
 /**
@@ -23,7 +25,10 @@ public class BlockSetup {
     public static Block StoneIGINDent;
     public static Block StoneIGINDentSmall;
 
-    public static Block Slope;
+    public static Block StoneSEDDent;
+    public static Block StoneSEDDentSmall;
+
+    //public static Block Slope;
 
     public static void LoadBlocks(){
         System.out.println(new StringBuilder().append("[TFC-Addition] Loading Blocks").toString());
@@ -36,6 +41,9 @@ public class BlockSetup {
 
         StoneIGINDent = new BlockIGINDent().setHardness(16F).setBlockName("IgInRockDent");
         StoneIGINDentSmall = new BlockIGINDentSmall().setHardness(16F).setBlockName("IgInRockDentSmall");
+
+        StoneSEDDent = new BlockSEDDent().setHardness(16F).setBlockName("SEDRockDent");
+        StoneSEDDentSmall = new BlockSEDDentSmall().setHardness(16F).setBlockName("SEDRockDentSmall");
 
         //Slope = new BlockSlope(Material.rock).setBlockName("TFCSlope");
     }
@@ -51,6 +59,9 @@ public class BlockSetup {
 
         GameRegistry.registerBlock(StoneIGINDent, ItemBlock.class, "StoneIGINDent");
         GameRegistry.registerBlock(StoneIGINDentSmall, ItemBlock.class, "StoneIGINDentSmall");
+
+        GameRegistry.registerBlock(StoneSEDDent, ItemBlock.class, "StoneSEDDent");
+        GameRegistry.registerBlock(StoneSEDDentSmall, ItemBlock.class, "StoneSEDDentSmall");
 
         //GameRegistry.registerBlock(Slope, ItemBlock.class, "Slipperyslope");
     }

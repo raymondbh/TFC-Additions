@@ -78,8 +78,8 @@ public class ChiselMode_DentSmall extends ChiselMode{
                 world.setBlock(x, y, z, BlockSetup.StoneIGINDentSmall, meta, 0x2);
             } else if(id == TFCBlocks.StoneIgEx || id == TFCBlocks.StoneIgExSmooth  || id == BlockSetup.StoneIGEXDent) {
                 world.setBlock(x, y, z, BlockSetup.StoneIGEXDentSmall, meta, 0x2);
-                //} else if(id == TFCBlocks.StoneSed) {
-                //    world.setBlock(x, y, z, TFCBlocks.StoneSedSmooth, meta, 0x2);
+            } else if(id == TFCBlocks.StoneSed || id == TFCBlocks.StoneSedSmooth || id == BlockSetup.StoneSEDDent) {
+                world.setBlock(x, y, z, BlockSetup.StoneSEDDentSmall, meta, 0x2);
             } else if(id == TFCBlocks.StoneMM || id == TFCBlocks.StoneMMSmooth || id == BlockSetup.StoneMMDent) {
                 world.setBlock(x, y, z, BlockSetup.StoneMMDentSmall, meta, 0x2);
             }
