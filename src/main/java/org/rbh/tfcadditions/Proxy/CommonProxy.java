@@ -5,6 +5,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import org.rbh.tfcadditions.Blocks.BlockSetup;
+import org.rbh.tfcadditions.Items.ItemSetup;
 import org.rbh.tfcadditions.Tools.ChiselMode_Dent;
 import org.rbh.tfcadditions.Tools.ChiselMode_DentSmall;
 
@@ -17,6 +18,8 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event){
         BlockSetup.LoadBlocks();
         BlockSetup.RegisterBlocks();
+
+        ItemSetup.Setup();
     }
 
     public void Init(FMLInitializationEvent event){

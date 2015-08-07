@@ -10,7 +10,7 @@ import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGEXDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGINDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockMMDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockSEDDentSmall;
-import org.rbh.tfcadditions.Items.ItemBlock;
+import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlock;
 
 /**
  * Created by raymondbh on 15.07.2015.

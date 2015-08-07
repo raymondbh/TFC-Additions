@@ -1,4 +1,4 @@
-package org.rbh.tfcadditions.Items;
+package org.rbh.tfcadditions.Items.ItemBlocks;
 
 import com.bioxx.tfc.Items.ItemBlocks.ItemTerraBlock;
 import net.minecraft.block.Block;
