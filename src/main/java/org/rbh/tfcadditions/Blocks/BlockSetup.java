@@ -42,8 +42,8 @@ public class BlockSetup {
         StoneIGINDent = new BlockIGINDent().setHardness(16F).setBlockName("IgInRockDent");
         StoneIGINDentSmall = new BlockIGINDentSmall().setHardness(16F).setBlockName("IgInRockDentSmall");
 
-        StoneSEDDent = new BlockSEDDent().setHardness(16F).setBlockName("SEDRockDent");
-        StoneSEDDentSmall = new BlockSEDDentSmall().setHardness(16F).setBlockName("SEDRockDentSmall");
+        StoneSEDDent = new BlockSEDDent().setHardness(16F).setBlockName("SedRockDent");
+        StoneSEDDentSmall = new BlockSEDDentSmall().setHardness(16F).setBlockName("SedRockDentSmall");
 
         //Slope = new BlockSlope(Material.rock).setBlockName("TFCSlope");
     }
