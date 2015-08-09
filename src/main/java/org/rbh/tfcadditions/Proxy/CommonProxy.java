@@ -19,7 +19,8 @@ public class CommonProxy {
         BlockSetup.LoadBlocks();
         BlockSetup.RegisterBlocks();
 
-        ItemSetup.Setup();
+        ItemSetup.LoadItems();
+        ItemSetup.RegisterItems();
     }
 
     public void Init(FMLInitializationEvent event){
