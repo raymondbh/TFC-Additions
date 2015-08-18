@@ -29,6 +29,7 @@ public class TFCAdditions {
     public void preInit(FMLPreInitializationEvent event){
         instance = this;
         proxy.preInit(event);
+        proxy.registerKeyBindingHandler();
     }
 
     @EventHandler

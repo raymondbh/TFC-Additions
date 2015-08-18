@@ -2,9 +2,11 @@ package org.rbh.tfcadditions.Proxy;
 
 import com.cricketcraft.ctmlib.CTMRenderer;
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import org.rbh.tfcadditions.Handlers.KeyBindingHandler;
 
 /**
  * Created by raymondbh on 15.07.2015.
@@ -12,6 +14,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class ClientProxy extends CommonProxy {
 
     public static int CTMRendrerID;
+    //public static int SlopeRendrerID;
 
     @Override
     public void preInit(FMLPreInitializationEvent event){
@@ -21,12 +24,23 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void Init(FMLInitializationEvent event){
         super.Init(event);
+
         CTMRendrerID = RenderingRegistry.getNextAvailableRenderId();
+        //SlopeRendrerID = RenderingRegistry.getNextAvailableRenderId();
+
         RenderingRegistry.registerBlockHandler(new CTMRenderer(CTMRendrerID));
+        //RenderingRegistry.registerBlockHandler(SlopeRendrerID, new BlockHandlerCarpentersSlope());
     }
 
     @Override
     public void postInit(FMLPostInitializationEvent event){
         super.postInit(event);
     }
+
+    @Override
+    public void registerKeyBindingHandler()
+    {
+        FMLCommonHandler.instance().bus().register(new KeyBindingHandler());
+    }
+
 }

@@ -1,4 +1,4 @@
-package org.rbh.tfcadditions.Blocks;
+package org.rbh.tfcadditions.Blocks.Dent;
 
 import com.bioxx.tfc.Core.TFCTabs;
 import net.minecraft.block.material.Material;
@@ -6,15 +6,13 @@ import net.minecraft.util.IIcon;
 import org.rbh.tfcadditions.Reference.Names;
 
 /**
- * Created by raymondbh on 16.07.2015.
+ * Created by rbh on 30.07.2015.
  */
-public class BlockMMDent extends BlockDent {
-
-    public BlockMMDent()
-    {
+public class BlockIGEXDent extends BlockDent {
+    public BlockIGEXDent() {
         super(Material.rock);
         this.setCreativeTab(TFCTabs.TFCBuilding);
-        names = Names.STONE_MM;
+        names = Names.STONE_IGEX;
         icons = new IIcon[names.length];
     }
 }

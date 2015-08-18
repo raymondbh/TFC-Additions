@@ -5,7 +5,6 @@ import com.bioxx.tfc.Items.Tools.ItemHammer;
 import com.bioxx.tfc.api.Tools.IToolChisel;
 import com.cricketcraft.ctmlib.ICTMBlock;
 import com.cricketcraft.ctmlib.ISubmapManager;
-import com.cricketcraft.ctmlib.SubmapManagerCTM;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -18,25 +17,32 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import org.rbh.tfcadditions.Api.SubmapManCTM;
 import org.rbh.tfcadditions.Proxy.ClientProxy;
 import org.rbh.tfcadditions.Reference.Reference;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by raymondbh on 16.07.2015.
+ * Created by rbh on 30.07.2015.
  */
-public class BlockDent extends BlockTerra implements ICTMBlock {
+public class BlockChisel extends BlockTerra implements ICTMBlock{
 
-    @SideOnly(Side.CLIENT)
-    private SubmapManagerCTM manager;
+    //@SideOnly(Side.CLIENT)
+    private List<SubmapManCTM> manager = new ArrayList<SubmapManCTM>();
 
-    protected BlockDent(Material material)
-    {
-        super(material);
-    }
     protected String[] names;
     protected IIcon[] icons;
+    private String blockType, chiselType;
+
+    public BlockChisel(Material material, String blockType, String chiselType)
+    {
+        super(material);
+        this.chiselType = chiselType;
+        this.blockType = blockType;
+
+    }
 
     @SideOnly(Side.CLIENT)
     @Override
@@ -61,20 +67,23 @@ public class BlockDent extends BlockTerra implements ICTMBlock {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        manager = new SubmapManagerCTM(names, "rocks", "Dent");
-        manager.registerIcons(Reference.ModID, this, iconRegister);
+        for(int i = 0; i < names.length; i++) {
+            manager.add(i, new SubmapManCTM(names[i], blockType, chiselType));
+            manager.get(i).registerIcons(Reference.ModID, this, iconRegister);
+        }
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
-        return manager.getIcon(world, x, y, z, side);
+        int meta = world.getBlockMetadata(x, y, z);
+        return manager.get(meta).getIcon(world, x, y, z, side);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        return manager.getIcon(side, meta);
+        return manager.get(meta).getIcon(side, meta);
     }
 
     @Override
@@ -107,11 +116,11 @@ public class BlockDent extends BlockTerra implements ICTMBlock {
 
     @Override
     public ISubmapManager getManager(IBlockAccess world, int x, int y, int z, int meta) {
-        return manager;
+        return manager.get(meta);
     }
 
     @Override
     public ISubmapManager getManager(int meta) {
-        return manager;
+        return manager.get(meta);
     }
 }
