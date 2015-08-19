@@ -10,6 +10,7 @@ import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGEXDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGINDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockMMDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockSEDDentSmall;
+import org.rbh.tfcadditions.Blocks.Dent.BlockPlankDent;
 import org.rbh.tfcadditions.Reference.Names;
 
 /**
@@ -26,5 +27,6 @@ public class ItemBlock extends ItemTerraBlock {
         else if(block instanceof BlockIGINDentSmall) MetaNames = Names.STONE_IGIN;
         else if(block instanceof BlockSEDDent) MetaNames = Names.STONE_SED;
         else if(block instanceof BlockSEDDentSmall) MetaNames = Names.STONE_SED;
+        else if(block instanceof BlockPlankDent) MetaNames = Names.WOOD_ALL;
     }
 }

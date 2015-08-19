@@ -5,61 +5,80 @@
 #To create the § symbol which is used for assigning a color to the following text press Alt + 21 on Windows. For other OSes, view the above link.
 #This file needs to be UTF-8 encoded to work with MC 1.7+
 
-tile.MMRockDent.Gneiss.name=Gneiss with Dent
-tile.MMRockDent.Marble.name=Marble with Dent
-tile.MMRockDent.Phyllite.name=Phyllite with Dent
-tile.MMRockDent.Quartzite.name=Quartzite with Dent
-tile.MMRockDent.Schist.name=Schist with Dent
-tile.MMRockDent.Slate.name=Slate with Dent
+tile.MMRockDent.Gneiss.name=Gneiss with Outline
+tile.MMRockDent.Marble.name=Marble with Outline
+tile.MMRockDent.Phyllite.name=Phyllite with Outline
+tile.MMRockDent.Quartzite.name=Quartzite with Outline
+tile.MMRockDent.Schist.name=Schist with Outline
+tile.MMRockDent.Slate.name=Slate with Outline
 
-tile.MMRockDentSmall.Gneiss.name=Gneiss with small Dent
-tile.MMRockDentSmall.Marble.name=Marble with small Dent
-tile.MMRockDentSmall.Phyllite.name=Phyllite with small Dent
-tile.MMRockDentSmall.Quartzite.name=Quartzite with small Dent
-tile.MMRockDentSmall.Schist.name=Schist with small Dent
-tile.MMRockDentSmall.Slate.name=Slate with small Dent
+tile.MMRockDentSmall.Gneiss.name=Gneiss with small Outline
+tile.MMRockDentSmall.Marble.name=Marble with small Outline
+tile.MMRockDentSmall.Phyllite.name=Phyllite with small Outline
+tile.MMRockDentSmall.Quartzite.name=Quartzite with small Outline
+tile.MMRockDentSmall.Schist.name=Schist with small Outline
+tile.MMRockDentSmall.Slate.name=Slate with small Outline
 
-tile.IgExRockDent.Andesite.name=Andesite with Dent
-tile.IgExRockDent.Basalt.name=Basalt with Dent
-tile.IgExRockDent.Dacite.name=Dacite with Dent
-tile.IgExRockDent.Rhyolite.name=Rhyolite with Dent
+tile.IgExRockDent.Andesite.name=Andesite with Outline
+tile.IgExRockDent.Basalt.name=Basalt with Outline
+tile.IgExRockDent.Dacite.name=Dacite with Outline
+tile.IgExRockDent.Rhyolite.name=Rhyolite with Outline
 
-tile.IgExRockDentSmall.Andesite.name=Andesite with small Dent
-tile.IgExRockDentSmall.Basalt.name=Basalt with small Dent
-tile.IgExRockDentSmall.Dacite.name=Dacite with small Dent
-tile.IgExRockDentSmall.Rhyolite.name=Rhyolite with small Dent
+tile.IgExRockDentSmall.Andesite.name=Andesite with small Outline
+tile.IgExRockDentSmall.Basalt.name=Basalt with small Outline
+tile.IgExRockDentSmall.Dacite.name=Dacite with small Outline
+tile.IgExRockDentSmall.Rhyolite.name=Rhyolite with small Outline
 
-tile.IgInRockDent.Diorite.name=Diorite with Dent
-tile.IgInRockDent.Gabbro.name=Gabbro with Dent
-tile.IgInRockDent.Granite.name=Granite with Dent
+tile.IgInRockDent.Diorite.name=Diorite with Outline
+tile.IgInRockDent.Gabbro.name=Gabbro with Outline
+tile.IgInRockDent.Granite.name=Granite with Outline
 
-tile.IgInRockDentSmall.Diorite.name=Diorite with small Dent
-tile.IgInRockDentSmall.Gabbro.name=Gabbro with small Dent
-tile.IgInRockDentSmall.Granite.name=Granite with small Dent
+tile.IgInRockDentSmall.Diorite.name=Diorite with small Outline
+tile.IgInRockDentSmall.Gabbro.name=Gabbro with small Outline
+tile.IgInRockDentSmall.Granite.name=Granite with small Outline
 
-tile.SedRockDent.Chalk.name=Chalk with Dent
-tile.SedRockDent.Chert.name=Chert with Dent
-tile.SedRockDent.Claystone.name=Claystone with Dent
-tile.SedRockDent.Conglomerate.name=Conglomerate with Dent
-tile.SedRockDent.Dolomite.name=Dolomite with Dent
-tile.SedRockDent.Limestone.name=Limestone with Dent
-tile.SedRockDent.Rock Salt.name=Rock Salt with Dent
-tile.SedRockDent.Shale.name=Shale with Dent
+tile.SedRockDent.Chalk.name=Chalk with Outline
+tile.SedRockDent.Chert.name=Chert with Outline
+tile.SedRockDent.Claystone.name=Claystone with Outline
+tile.SedRockDent.Conglomerate.name=Conglomerate with Outline
+tile.SedRockDent.Dolomite.name=Dolomite with Outline
+tile.SedRockDent.Limestone.name=Limestone with Outline
+tile.SedRockDent.Rock Salt.name=Rock Salt with Outline
+tile.SedRockDent.Shale.name=Shale with Outline
 
-tile.SedRockDent.Chalk.name=Chalk with small Dent
-tile.SedRockDent.Chert.name=Chert with small Dent
-tile.SedRockDent.Claystone.name=Claystone with small Dent
-tile.SedRockDent.Conglomerate.name=Conglomerate with small Dent
-tile.SedRockDent.Dolomite.name=Dolomite with small Dent
-tile.SedRockDent.Limestone.name=Limestone with small Dent
-tile.SedRockDent.Rock Salt.name=Rock Salt with small Dent
-tile.SedRockDent.Shale.name=Shale with small Dent
+tile.SedRockDent.Chalk.name=Chalk with small Outline
+tile.SedRockDent.Chert.name=Chert with small Outline
+tile.SedRockDent.Claystone.name=Claystone with small Outline
+tile.SedRockDent.Conglomerate.name=Conglomerate with small Outline
+tile.SedRockDent.Dolomite.name=Dolomite with small Outline
+tile.SedRockDent.Limestone.name=Limestone with small Outline
+tile.SedRockDent.Rock Salt.name=Rock Salt with small Outline
+tile.SedRockDent.Shale.name=Shale with small Outline
 
-tile.SedRockDentSmall.Chalk.name=Chalk with small Dent
-tile.SedRockDentSmall.Chert.name=Chert with small Dent
-tile.SedRockDentSmall.Claystone.name=Claystone with small Dent
-tile.SedRockDentSmall.Conglomerate.name=Conglomerate with small Dent
-tile.SedRockDentSmall.Dolomite.name=Dolomite with small Dent
-tile.SedRockDentSmall.Limestone.name=Limestone with small Dent
-tile.SedRockDentSmall.Rock Salt.name=Rock Salt with small Dent
-tile.SedRockDentSmall.Shale.name=Shale with small Dent
+tile.SedRockDentSmall.Chalk.name=Chalk with small Outline
+tile.SedRockDentSmall.Chert.name=Chert with small Outline
+tile.SedRockDentSmall.Claystone.name=Claystone with small Outline
+tile.SedRockDentSmall.Conglomerate.name=Conglomerate with small Outline
+tile.SedRockDentSmall.Dolomite.name=Dolomite with small Outline
+tile.SedRockDentSmall.Limestone.name=Limestone with small Outline
+tile.SedRockDentSmall.Rock Salt.name=Rock Salt with small Outline
+tile.SedRockDentSmall.Shale.name=Shale with small Outline
+
+tile.PlanksOutline.Oak.name=Oak with Outline
+tile.PlanksOutline.Aspen.name=Aspen with Outline
+tile.PlanksOutline.Birch.name=Birch with Outline
+tile.PlanksOutline.Chestnut.name=Chestnut with Outline
+tile.PlanksOutline.Douglas Fir.name=Douglas Fir with Outline
+tile.PlanksOutline.Hickory.name=Hickory with Outline
+tile.PlanksOutline.Maple.name=Maple with Outline
+tile.PlanksOutline.Ash.name=Ash with Outline
+tile.PlanksOutline.Pine.name=Pine with Outline
+tile.PlanksOutline.Sequoia.name=Sequoia with Outline
+tile.PlanksOutline.Spruce.name=Spruce with Outline
+tile.PlanksOutline.Sycamore.name=Sycamore with Outline
+tile.PlanksOutline.White Cedar.name=White Cedar with Outline
+tile.PlanksOutline.White Elm.name=White Elm with Outline
+tile.PlanksOutline.Willow.name=Willow with Outline
+tile.PlanksOutline.Kapok.name=Kapok with Outline
+
+tile.PlanksOutline2.Acacia.name=Acacia with Outline

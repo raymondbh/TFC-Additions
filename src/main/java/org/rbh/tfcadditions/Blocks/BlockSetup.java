@@ -10,7 +10,10 @@ import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGEXDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockIGINDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockMMDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockSEDDentSmall;
+import org.rbh.tfcadditions.Blocks.Dent.BlockPlank2Dent;
+import org.rbh.tfcadditions.Blocks.Dent.BlockPlankDent;
 import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlock;
+import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlockPlanks;
 
 /**
  * Created by raymondbh on 15.07.2015.
@@ -27,6 +30,9 @@ public class BlockSetup {
 
     public static Block StoneSEDDent;
     public static Block StoneSEDDentSmall;
+
+    public static Block PlanksOutline;
+    public static Block PlanksOutline2;
 
     //public static Block Slope;
 
@@ -45,6 +51,9 @@ public class BlockSetup {
         StoneSEDDent = new BlockSEDDent().setHardness(16F).setBlockName("SedRockDent");
         StoneSEDDentSmall = new BlockSEDDentSmall().setHardness(16F).setBlockName("SedRockDentSmall");
 
+        PlanksOutline = new BlockPlankDent().setBlockName("PlanksOutline");
+        PlanksOutline2 = new BlockPlank2Dent().setBlockName("PlanksOutline2");
+
         //Slope = new BlockSlope(Material.rock).setBlockName("TFCSlope");
     }
 
@@ -62,6 +71,9 @@ public class BlockSetup {
 
         GameRegistry.registerBlock(StoneSEDDent, ItemBlock.class, "StoneSEDDent");
         GameRegistry.registerBlock(StoneSEDDentSmall, ItemBlock.class, "StoneSEDDentSmall");
+
+        GameRegistry.registerBlock(PlanksOutline, ItemBlockPlanks.class, "OutlinedPlanks");
+        GameRegistry.registerBlock(PlanksOutline2, ItemBlockPlanks.class, "OutlinedPlanks2");
 
         //GameRegistry.registerBlock(Slope, ItemBlock.class, "Slipperyslope");
     }
