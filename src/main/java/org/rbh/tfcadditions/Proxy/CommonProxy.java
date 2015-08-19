@@ -8,6 +8,7 @@ import org.rbh.tfcadditions.Blocks.BlockSetup;
 import org.rbh.tfcadditions.Items.ItemSetup;
 import org.rbh.tfcadditions.Tools.ChiselMode_Dent;
 import org.rbh.tfcadditions.Tools.ChiselMode_DentSmall;
+import org.rbh.tfcadditions.Utility.CarpentersBlocksHandler;
 
 
 /**
@@ -21,19 +22,17 @@ public class CommonProxy {
 
         ItemSetup.LoadItems();
         ItemSetup.RegisterItems();
+
+        if(CarpentersBlocksHandler.isLoaded())
+            CarpentersBlocksHandler.preInit();
     }
 
     public void Init(FMLInitializationEvent event){
         ChiselManager.getInstance().addChiselMode(new ChiselMode_Dent("Dent"));
         ChiselManager.getInstance().addChiselMode(new ChiselMode_DentSmall("DentSmall"));
-        //ChiselManager.getInstance().addChiselMode(new ChiselMode_Slope("Slope"));
     }
 
     public void postInit(FMLPostInitializationEvent event){
-
-    }
-
-    public void registerKeyBindingHandler(){
 
     }
 }

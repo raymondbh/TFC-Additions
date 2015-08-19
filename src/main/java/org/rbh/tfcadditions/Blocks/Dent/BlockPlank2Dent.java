@@ -12,7 +12,7 @@ import org.rbh.tfcadditions.Reference.Names;
 public class BlockPlank2Dent extends BlockChisel {
     public BlockPlank2Dent()
     {
-        super(Material.wood, "wood", "Plank Outline panel");
+        super(Material.wood, "wood", "Plank Outline");
         this.setCreativeTab(TFCTabs.TFCBuilding);
         String[] MetaNames = new String[Names.WOOD_ALL.length-16];
         System.arraycopy(Names.WOOD_ALL, 16, MetaNames, 0, Names.WOOD_ALL.length-16);

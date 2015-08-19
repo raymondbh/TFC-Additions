@@ -1,4 +1,4 @@
-package org.rbh.tfchidenei;
+package org.rbh.tfcadditions.Utility;
 
 import cpw.mods.fml.common.Loader;
 import net.minecraft.init.Blocks;
@@ -327,7 +327,7 @@ public class NotEnoughItemsHandler {
         codechicken.nei.api.API.hideItem(new ItemStack(Items.iron_horse_armor, 1, OreDictionary.WILDCARD_VALUE));
         codechicken.nei.api.API.hideItem(new ItemStack(Items.golden_horse_armor, 1, OreDictionary.WILDCARD_VALUE));
         codechicken.nei.api.API.hideItem(new ItemStack(Items.diamond_horse_armor, 1, OreDictionary.WILDCARD_VALUE));
-        codechicken.nei.api.API.hideItem(new ItemStack(Items.lead, 1, OreDictionary.WILDCARD_VALUE));
+        //codechicken.nei.api.API.hideItem(new ItemStack(Items.lead, 1, OreDictionary.WILDCARD_VALUE));
         codechicken.nei.api.API.hideItem(new ItemStack(Items.name_tag, 1, OreDictionary.WILDCARD_VALUE));
         codechicken.nei.api.API.hideItem(new ItemStack(Items.command_block_minecart, 1, OreDictionary.WILDCARD_VALUE));
         codechicken.nei.api.API.hideItem(new ItemStack(Items.record_13, 1, OreDictionary.WILDCARD_VALUE));

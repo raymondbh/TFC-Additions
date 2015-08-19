@@ -46,15 +46,6 @@ tile.SedRockDent.Limestone.name=Limestone with Outline
 tile.SedRockDent.Rock Salt.name=Rock Salt with Outline
 tile.SedRockDent.Shale.name=Shale with Outline
 
-tile.SedRockDent.Chalk.name=Chalk with small Outline
-tile.SedRockDent.Chert.name=Chert with small Outline
-tile.SedRockDent.Claystone.name=Claystone with small Outline
-tile.SedRockDent.Conglomerate.name=Conglomerate with small Outline
-tile.SedRockDent.Dolomite.name=Dolomite with small Outline
-tile.SedRockDent.Limestone.name=Limestone with small Outline
-tile.SedRockDent.Rock Salt.name=Rock Salt with small Outline
-tile.SedRockDent.Shale.name=Shale with small Outline
-
 tile.SedRockDentSmall.Chalk.name=Chalk with small Outline
 tile.SedRockDentSmall.Chert.name=Chert with small Outline
 tile.SedRockDentSmall.Claystone.name=Claystone with small Outline

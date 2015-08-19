@@ -34,8 +34,6 @@ public class BlockSetup {
     public static Block PlanksOutline;
     public static Block PlanksOutline2;
 
-    //public static Block Slope;
-
     public static void LoadBlocks(){
         System.out.println(new StringBuilder().append("[TFC-Addition] Loading Blocks").toString());
 
@@ -53,8 +51,6 @@ public class BlockSetup {
 
         PlanksOutline = new BlockPlankDent().setBlockName("PlanksOutline");
         PlanksOutline2 = new BlockPlank2Dent().setBlockName("PlanksOutline2");
-
-        //Slope = new BlockSlope(Material.rock).setBlockName("TFCSlope");
     }
 
     public static void RegisterBlocks(){
@@ -74,7 +70,5 @@ public class BlockSetup {
 
         GameRegistry.registerBlock(PlanksOutline, ItemBlockPlanks.class, "OutlinedPlanks");
         GameRegistry.registerBlock(PlanksOutline2, ItemBlockPlanks.class, "OutlinedPlanks2");
-
-        //GameRegistry.registerBlock(Slope, ItemBlock.class, "Slipperyslope");
     }
 }
