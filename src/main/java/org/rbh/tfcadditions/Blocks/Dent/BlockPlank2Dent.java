@@ -14,9 +14,8 @@ public class BlockPlank2Dent extends BlockChisel {
     {
         super(Material.wood, "wood", "Plank Outline");
         this.setCreativeTab(TFCTabs.TFCBuilding);
-        String[] MetaNames = new String[Names.WOOD_ALL.length-16];
-        System.arraycopy(Names.WOOD_ALL, 16, MetaNames, 0, Names.WOOD_ALL.length-16);
-        names = MetaNames;
+        names = new String[Names.WOOD_ALL.length - 16];
+        System.arraycopy(Names.WOOD_ALL, 16, names, 0, Names.WOOD_ALL.length - 16);
         icons = new IIcon[names.length];
     }
 }
