@@ -3,10 +3,12 @@ package org.rbh.tfcadditions.Blocks;
 import com.bioxx.tfc.Blocks.BlockTerra;
 import com.bioxx.tfc.Items.Tools.ItemHammer;
 import com.bioxx.tfc.api.Tools.IToolChisel;
+import com.cricketcraft.ctmlib.TextureSubmap;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -14,6 +16,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 import org.rbh.tfcadditions.Reference.Names;
+import org.rbh.tfcadditions.Reference.Reference;
 
 import java.util.List;
 
@@ -29,10 +32,12 @@ public class BlockPlanks extends BlockTerra {
 
     protected String[] names;
     protected IIcon[] icons;
+    protected String plankType;
 
-    public BlockPlanks(Material material)
+    public BlockPlanks(Material material, String Type)
     {
         super(material);
+        plankType = Type;
     }
 
     @SideOnly(Side.CLIENT)
@@ -44,6 +49,14 @@ public class BlockPlanks extends BlockTerra {
     {
         for(int i = 0; i < names.length; i++)
             list.add(new ItemStack(this,1,i));
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerBlockIcons(IIconRegister registerer)
+    {
+        for(int meta = 0; meta < names.length; meta++)
+            icons[meta] = registerer.registerIcon(Reference.ModID + ":" + "wood/" + names[meta] + "/" + names[meta] + plankType);
     }
 
     @Override

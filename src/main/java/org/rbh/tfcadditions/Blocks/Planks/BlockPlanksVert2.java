@@ -2,19 +2,15 @@ package org.rbh.tfcadditions.Blocks.Planks;
 
 import com.bioxx.tfc.Core.TFCTabs;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.init.Blocks;
 import net.minecraft.util.IIcon;
 import org.rbh.tfcadditions.Blocks.BlockPlanks;
-import org.rbh.tfcadditions.Reference.Reference;
 
 /**
- * Created by raymondbh on 20.08.2015.
+ * Created by rbh on 20.08.2015.
  */
-public class BlockPlanksParquet2 extends BlockPlanks {
-    public BlockPlanksParquet2()
-    {
-        super(Material.wood, " Plank Parquet");
+public class BlockPlanksVert2 extends BlockPlanks {
+    public BlockPlanksVert2() {
+        super(Material.wood, " Plank Vertical");
         this.setCreativeTab(TFCTabs.TFCBuilding);
         names = getMetaNames(NameType.SECOND_BRACKET);
         icons = new IIcon[names.length];

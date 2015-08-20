@@ -12,10 +12,7 @@ import org.rbh.tfcadditions.Blocks.DentSmall.BlockMMDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockSEDDentSmall;
 import org.rbh.tfcadditions.Blocks.Dent.BlockPlank2Dent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockPlankDent;
-import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksLarge;
-import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksLarge2;
-import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksParquet;
-import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksParquet2;
+import org.rbh.tfcadditions.Blocks.Planks.*;
 import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlock;
 import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlockPlanks;
 
@@ -44,6 +41,12 @@ public class BlockSetup {
     public static Block PlanksParquet;
     public static Block PlanksParquet2;
 
+    public static Block PlanksNorm;
+    public static Block PlanksNorm2;
+
+    public static Block PlanksVert;
+    public static Block PlanksVert2;
+
     public static void LoadBlocks(){
         System.out.println(new StringBuilder().append("[TFC-Addition] Loading Blocks").toString());
 
@@ -68,6 +71,12 @@ public class BlockSetup {
         PlanksParquet = new BlockPlanksParquet().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksParquet");
         PlanksParquet2 = new BlockPlanksParquet2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksParquet2");
 
+        PlanksNorm = new BlockPlanksNorm().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksNorm");
+        PlanksNorm2 = new BlockPlanksNorm2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksNorm2");
+
+        PlanksVert = new BlockPlanksVert().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksVert");
+        PlanksVert2 = new BlockPlanksVert2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksVert2");
+
         StoneMMDent.setHarvestLevel("pickaxe", 0);
         StoneMMDentSmall.setHarvestLevel("pickaxe", 0);
 
@@ -88,6 +97,12 @@ public class BlockSetup {
 
         PlanksParquet.setHarvestLevel("axe", 0);
         PlanksParquet2.setHarvestLevel("axe", 0);
+
+        PlanksNorm.setHarvestLevel("axe", 0);
+        PlanksNorm2.setHarvestLevel("axe", 0);
+
+        PlanksVert.setHarvestLevel("axe", 0);
+        PlanksVert2.setHarvestLevel("axe", 0);
     }
 
     public static void RegisterBlocks(){
@@ -113,5 +128,11 @@ public class BlockSetup {
 
         GameRegistry.registerBlock(PlanksParquet, ItemBlockPlanks.class, "ParquetPlanks");
         GameRegistry.registerBlock(PlanksParquet2, ItemBlockPlanks.class, "ParquetPlanks2");
+
+        GameRegistry.registerBlock(PlanksNorm, ItemBlockPlanks.class, "NormalPlanks");
+        GameRegistry.registerBlock(PlanksNorm2, ItemBlockPlanks.class, "NormalPlanks2");
+
+        GameRegistry.registerBlock(PlanksVert, ItemBlockPlanks.class, "VerticalPlanks");
+        GameRegistry.registerBlock(PlanksVert2, ItemBlockPlanks.class, "VerticalPlanks2");
     }
 }
