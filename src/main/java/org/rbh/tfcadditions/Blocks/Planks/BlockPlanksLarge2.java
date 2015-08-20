@@ -29,7 +29,7 @@ public class BlockPlanksLarge2 extends BlockTerra
     String[] names;
     IIcon[] icons;
 
-    public BlockPlanksLarge2(Material material)
+    public BlockPlanksLarge2()
     {
         super(Material.wood);
         this.setCreativeTab(TFCTabs.TFCBuilding);

@@ -12,6 +12,8 @@ import org.rbh.tfcadditions.Blocks.DentSmall.BlockMMDentSmall;
 import org.rbh.tfcadditions.Blocks.DentSmall.BlockSEDDentSmall;
 import org.rbh.tfcadditions.Blocks.Dent.BlockPlank2Dent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockPlankDent;
+import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksLarge;
+import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksLarge2;
 import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlock;
 import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlockPlanks;
 
@@ -55,8 +57,8 @@ public class BlockSetup {
         PlanksOutline = new BlockPlankDent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline");
         PlanksOutline2 = new BlockPlank2Dent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline2");
 
-        PlanksLarge = new BlockPlankDent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge");
-        PlanksLarge2 = new BlockPlank2Dent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge2");
+        PlanksLarge = new BlockPlanksLarge().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge");
+        PlanksLarge2 = new BlockPlanksLarge2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge2");
 
         StoneMMDent.setHarvestLevel("pickaxe", 0);
         StoneMMDentSmall.setHarvestLevel("pickaxe", 0);
