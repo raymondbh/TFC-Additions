@@ -14,6 +14,8 @@ import org.rbh.tfcadditions.Blocks.Dent.BlockPlank2Dent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockPlankDent;
 import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksLarge;
 import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksLarge2;
+import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksParquet;
+import org.rbh.tfcadditions.Blocks.Planks.BlockPlanksParquet2;
 import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlock;
 import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlockPlanks;
 
@@ -39,6 +41,9 @@ public class BlockSetup {
     public static Block PlanksLarge;
     public static Block PlanksLarge2;
 
+    public static Block PlanksParquet;
+    public static Block PlanksParquet2;
+
     public static void LoadBlocks(){
         System.out.println(new StringBuilder().append("[TFC-Addition] Loading Blocks").toString());
 
@@ -60,6 +65,9 @@ public class BlockSetup {
         PlanksLarge = new BlockPlanksLarge().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge");
         PlanksLarge2 = new BlockPlanksLarge2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge2");
 
+        PlanksParquet = new BlockPlanksParquet().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksParquet");
+        PlanksParquet2 = new BlockPlanksParquet2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksParquet2");
+
         StoneMMDent.setHarvestLevel("pickaxe", 0);
         StoneMMDentSmall.setHarvestLevel("pickaxe", 0);
 
@@ -77,6 +85,9 @@ public class BlockSetup {
 
         PlanksLarge.setHarvestLevel("axe", 0);
         PlanksLarge2.setHarvestLevel("axe", 0);
+
+        PlanksParquet.setHarvestLevel("axe", 0);
+        PlanksParquet2.setHarvestLevel("axe", 0);
     }
 
     public static void RegisterBlocks(){
@@ -99,5 +110,8 @@ public class BlockSetup {
 
         GameRegistry.registerBlock(PlanksLarge, ItemBlockPlanks.class, "LargePlanks");
         GameRegistry.registerBlock(PlanksLarge2, ItemBlockPlanks.class, "LargePlanks2");
+
+        GameRegistry.registerBlock(PlanksParquet, ItemBlockPlanks.class, "ParquetPlanks");
+        GameRegistry.registerBlock(PlanksParquet2, ItemBlockPlanks.class, "ParquetPlanks2");
     }
 }

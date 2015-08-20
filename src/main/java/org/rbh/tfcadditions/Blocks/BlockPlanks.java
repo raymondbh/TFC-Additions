@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
+import org.rbh.tfcadditions.Reference.Names;
 
 import java.util.List;
 
@@ -20,6 +21,12 @@ import java.util.List;
  * Created by raymondbh on 20.08.2015.
  */
 public class BlockPlanks extends BlockTerra {
+
+    public enum NameType {
+        FIRST_BRACKET,
+        SECOND_BRACKET
+    }
+
     protected String[] names;
     protected IIcon[] icons;
 
@@ -37,6 +44,14 @@ public class BlockPlanks extends BlockTerra {
     {
         for(int i = 0; i < names.length; i++)
             list.add(new ItemStack(this,1,i));
+    }
+
+    @Override
+    public IIcon getIcon(int side, int meta)
+    {
+        if(meta < 0)
+            return icons[0];
+        return icons[meta];
     }
 
     @Override
@@ -65,5 +80,21 @@ public class BlockPlanks extends BlockTerra {
             return ((IToolChisel)entityplayer.getCurrentEquippedItem().getItem()).onUsed(world, entityplayer, x, y, z, block, meta, side, par7, par8, par9);
         }
         return false;
+    }
+
+    public String[] getNames(){return names;}
+
+    protected String[] getMetaNames(NameType bracket){
+        String[] MetaNames;
+        if(bracket == NameType.FIRST_BRACKET){
+            MetaNames = new String[16];
+            System.arraycopy(Names.WOOD_ALL, 0, MetaNames, 0, 16);
+            return MetaNames;
+        } else if(bracket == NameType.SECOND_BRACKET){
+            MetaNames = new String[Names.WOOD_ALL.length - 16];
+            System.arraycopy(Names.WOOD_ALL, 16, MetaNames, 0, Names.WOOD_ALL.length - 16);
+            return MetaNames;
+        }
+        return null;
     }
 }

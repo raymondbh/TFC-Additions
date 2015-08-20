@@ -11,13 +11,12 @@ import org.rbh.tfcadditions.Reference.Reference;
 /**
  * Created by raymondbh on 20.08.2015.
  */
-public class BlockPlanksLarge extends BlockPlanks
-{
-    public BlockPlanksLarge()
+public class BlockPlanksParquet2 extends BlockPlanks {
+    public BlockPlanksParquet2()
     {
         super(Material.wood);
         this.setCreativeTab(TFCTabs.TFCBuilding);
-        names = getMetaNames(NameType.FIRST_BRACKET);
+        names = getMetaNames(NameType.SECOND_BRACKET);
         icons = new IIcon[names.length];
     }
 
@@ -25,7 +24,7 @@ public class BlockPlanksLarge extends BlockPlanks
     public void registerBlockIcons(IIconRegister registerer)
     {
         for(int meta = 0; meta < names.length; meta++)
-            icons[meta] = registerer.registerIcon(Reference.ModID + ":" + "wood/"+names[meta]+" Plank Large");
+            icons[meta] = registerer.registerIcon(Reference.ModID + ":" + "wood/"+names[meta]+" Plank Parquet");
         Blocks.planks.registerBlockIcons(registerer);
     }
 }

@@ -11,9 +11,8 @@ import org.rbh.tfcadditions.Reference.Reference;
 /**
  * Created by raymondbh on 20.08.2015.
  */
-public class BlockPlanksLarge extends BlockPlanks
-{
-    public BlockPlanksLarge()
+public class BlockPlanksParquet extends BlockPlanks {
+    public BlockPlanksParquet()
     {
         super(Material.wood);
         this.setCreativeTab(TFCTabs.TFCBuilding);
@@ -25,7 +24,7 @@ public class BlockPlanksLarge extends BlockPlanks
     public void registerBlockIcons(IIconRegister registerer)
     {
         for(int meta = 0; meta < names.length; meta++)
-            icons[meta] = registerer.registerIcon(Reference.ModID + ":" + "wood/"+names[meta]+" Plank Large");
+            icons[meta] = registerer.registerIcon(Reference.ModID + ":" + "wood/"+names[meta]+" Plank Parquet");
         Blocks.planks.registerBlockIcons(registerer);
     }
 }
