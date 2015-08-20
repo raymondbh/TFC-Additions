@@ -34,6 +34,9 @@ public class BlockSetup {
     public static Block PlanksOutline;
     public static Block PlanksOutline2;
 
+    public static Block PlanksLarge;
+    public static Block PlanksLarge2;
+
     public static void LoadBlocks(){
         System.out.println(new StringBuilder().append("[TFC-Addition] Loading Blocks").toString());
 
@@ -52,6 +55,9 @@ public class BlockSetup {
         PlanksOutline = new BlockPlankDent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline");
         PlanksOutline2 = new BlockPlank2Dent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline2");
 
+        PlanksLarge = new BlockPlankDent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge");
+        PlanksLarge2 = new BlockPlank2Dent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge2");
+
         StoneMMDent.setHarvestLevel("pickaxe", 0);
         StoneMMDentSmall.setHarvestLevel("pickaxe", 0);
 
@@ -66,6 +72,9 @@ public class BlockSetup {
 
         PlanksOutline.setHarvestLevel("axe", 0);
         PlanksOutline2.setHarvestLevel("axe", 0);
+
+        PlanksLarge.setHarvestLevel("axe", 0);
+        PlanksLarge2.setHarvestLevel("axe", 0);
     }
 
     public static void RegisterBlocks(){
@@ -85,5 +94,8 @@ public class BlockSetup {
 
         GameRegistry.registerBlock(PlanksOutline, ItemBlockPlanks.class, "OutlinedPlanks");
         GameRegistry.registerBlock(PlanksOutline2, ItemBlockPlanks.class, "OutlinedPlanks2");
+
+        GameRegistry.registerBlock(PlanksLarge, ItemBlockPlanks.class, "LargePlanks");
+        GameRegistry.registerBlock(PlanksLarge2, ItemBlockPlanks.class, "LargePlanks2");
     }
 }
