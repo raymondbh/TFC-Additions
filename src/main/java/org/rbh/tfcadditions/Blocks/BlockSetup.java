@@ -49,8 +49,23 @@ public class BlockSetup {
         StoneSEDDent = new BlockSEDDent().setHardness(16F).setBlockName("SedRockDent");
         StoneSEDDentSmall = new BlockSEDDentSmall().setHardness(16F).setBlockName("SedRockDentSmall");
 
-        PlanksOutline = new BlockPlankDent().setBlockName("PlanksOutline");
-        PlanksOutline2 = new BlockPlank2Dent().setBlockName("PlanksOutline2");
+        PlanksOutline = new BlockPlankDent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline");
+        PlanksOutline2 = new BlockPlank2Dent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline2");
+
+        StoneMMDent.setHarvestLevel("pickaxe", 0);
+        StoneMMDentSmall.setHarvestLevel("pickaxe", 0);
+
+        StoneIGEXDent.setHarvestLevel("pickaxe", 0);
+        StoneIGEXDentSmall.setHarvestLevel("pickaxe", 0);
+
+        StoneIGINDent.setHarvestLevel("pickaxe", 0);
+        StoneIGINDentSmall.setHarvestLevel("pickaxe", 0);
+
+        StoneSEDDent.setHarvestLevel("pickaxe", 0);
+        StoneSEDDentSmall.setHarvestLevel("pickaxe", 0);
+
+        PlanksOutline.setHarvestLevel("axe", 0);
+        PlanksOutline2.setHarvestLevel("axe", 0);
     }
 
     public static void RegisterBlocks(){
