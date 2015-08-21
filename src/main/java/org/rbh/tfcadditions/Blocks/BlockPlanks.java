@@ -3,7 +3,6 @@ package org.rbh.tfcadditions.Blocks;
 import com.bioxx.tfc.Blocks.BlockTerra;
 import com.bioxx.tfc.Items.Tools.ItemHammer;
 import com.bioxx.tfc.api.Tools.IToolChisel;
-import com.cricketcraft.ctmlib.TextureSubmap;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
