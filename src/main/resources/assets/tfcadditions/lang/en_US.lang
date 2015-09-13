@@ -5,6 +5,8 @@
 #To create the § symbol which is used for assigning a color to the following text press Alt + 21 on Windows. For other OSes, view the above link.
 #This file needs to be UTF-8 encoded to work with MC 1.7+
 
+itemGroup.TFCAdditions=TFC Additions
+
 tile.MMRockDent.Gneiss.name=Gneiss with Outline
 tile.MMRockDent.Marble.name=Marble with Outline
 tile.MMRockDent.Phyllite.name=Phyllite with Outline

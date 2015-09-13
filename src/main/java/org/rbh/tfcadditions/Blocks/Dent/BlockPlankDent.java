@@ -1,6 +1,5 @@
 package org.rbh.tfcadditions.Blocks.Dent;
 
-import com.bioxx.tfc.Core.TFCTabs;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.IIcon;
 import org.rbh.tfcadditions.Blocks.BlockChisel;
@@ -13,7 +12,6 @@ public class BlockPlankDent extends BlockChisel {
     public BlockPlankDent()
     {
         super(Material.wood, "wood", "Plank Outline");
-        this.setCreativeTab(TFCTabs.TFCBuilding);
         names = new String[16];
         System.arraycopy(Names.WOOD_ALL, 0, names, 0, 16);
         icons = new IIcon[names.length];

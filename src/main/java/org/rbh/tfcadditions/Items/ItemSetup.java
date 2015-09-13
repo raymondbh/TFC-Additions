@@ -2,6 +2,9 @@ package org.rbh.tfcadditions.Items;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import org.rbh.tfcadditions.Blocks.BlockSetup;
+import org.rbh.tfcadditions.Core.TFCAdditionsTabs;
 import org.rbh.tfcadditions.Items.Tools.ItemPlaner;
 
 import com.bioxx.tfc.api.TFCItems;
@@ -11,6 +14,7 @@ import com.bioxx.tfc.api.TFCItems;
  */
 public class ItemSetup {
 
+    /*
     public static Item BismuthBronzePlaner;
     public static Item BlackBronzePlaner;
     public static Item BlackSteelPlaner;
@@ -20,21 +24,24 @@ public class ItemSetup {
     public static Item WroughtIronPlaner;
     public static Item RedSteelPlaner;
     public static Item SteelPlaner;
+    */
 
     public static void LoadItems(){
-
-        BismuthBronzePlaner = new ItemPlaner(TFCItems.BismuthBronzeToolMaterial).setUnlocalizedName("Bismuth Bronze Planer").setMaxDamage(TFCItems.BismuthBronzeUses);
-        BlackBronzePlaner = new ItemPlaner(TFCItems.BlackBronzeToolMaterial).setUnlocalizedName("Black Bronze Planer").setMaxDamage(TFCItems.BlackBronzeUses);
-        BlackSteelPlaner = new ItemPlaner(TFCItems.BlackSteelToolMaterial).setUnlocalizedName("Black Steel Planer").setMaxDamage(TFCItems.BlackSteelUses);
-        BlueSteelPlaner = new ItemPlaner(TFCItems.BlueSteelToolMaterial).setUnlocalizedName("Blue Steel Planer").setMaxDamage(TFCItems.BlueSteelUses);
-        BronzePlaner = new ItemPlaner(TFCItems.BronzeToolMaterial).setUnlocalizedName("Bronze Planer").setMaxDamage(TFCItems.BronzeUses);
-        CopperPlaner = new ItemPlaner(TFCItems.CopperToolMaterial).setUnlocalizedName("Copper Planer").setMaxDamage(TFCItems.CopperUses);
-        WroughtIronPlaner = new ItemPlaner(TFCItems.IronToolMaterial).setUnlocalizedName("Wrought Iron Planer").setMaxDamage(TFCItems.WroughtIronUses);
-        RedSteelPlaner = new ItemPlaner(TFCItems.RedSteelToolMaterial).setUnlocalizedName("Red Steel Planer").setMaxDamage(TFCItems.RedSteelUses);
-        SteelPlaner = new ItemPlaner(TFCItems.SteelToolMaterial).setUnlocalizedName("Steel Planer").setMaxDamage(TFCItems.SteelUses);
+        /*
+        BismuthBronzePlaner = new ItemPlaner(TFCItems.bismuthBronzeToolMaterial).setUnlocalizedName("Bismuth Bronze Planer").setMaxDamage(TFCItems.bismuthBronzeUses);
+        BlackBronzePlaner = new ItemPlaner(TFCItems.blackBronzeToolMaterial).setUnlocalizedName("Black Bronze Planer").setMaxDamage(TFCItems.blackBronzeUses);
+        BlackSteelPlaner = new ItemPlaner(TFCItems.blackSteelToolMaterial).setUnlocalizedName("Black Steel Planer").setMaxDamage(TFCItems.blackSteelUses);
+        BlueSteelPlaner = new ItemPlaner(TFCItems.blueSteelToolMaterial).setUnlocalizedName("Blue Steel Planer").setMaxDamage(TFCItems.blueSteelUses);
+        BronzePlaner = new ItemPlaner(TFCItems.bronzeToolMaterial).setUnlocalizedName("Bronze Planer").setMaxDamage(TFCItems.bronzeUses);
+        CopperPlaner = new ItemPlaner(TFCItems.copperToolMaterial).setUnlocalizedName("Copper Planer").setMaxDamage(TFCItems.copperUses);
+        WroughtIronPlaner = new ItemPlaner(TFCItems.ironToolMaterial).setUnlocalizedName("Wrought Iron Planer").setMaxDamage(TFCItems.wroughtIronUses);
+        RedSteelPlaner = new ItemPlaner(TFCItems.redSteelToolMaterial).setUnlocalizedName("Red Steel Planer").setMaxDamage(TFCItems.redSteelUses);
+        SteelPlaner = new ItemPlaner(TFCItems.steelToolMaterial).setUnlocalizedName("Steel Planer").setMaxDamage(TFCItems.steelUses);
+        */
     }
 
     public static void RegisterItems(){
+        /*
         GameRegistry.registerItem(BismuthBronzePlaner, BismuthBronzePlaner.getUnlocalizedName());
         GameRegistry.registerItem(BlackBronzePlaner, BlackBronzePlaner.getUnlocalizedName());
         GameRegistry.registerItem(BlackSteelPlaner, BlackSteelPlaner.getUnlocalizedName());
@@ -44,5 +51,10 @@ public class ItemSetup {
         GameRegistry.registerItem(WroughtIronPlaner, WroughtIronPlaner.getUnlocalizedName());
         GameRegistry.registerItem(RedSteelPlaner, RedSteelPlaner.getUnlocalizedName());
         GameRegistry.registerItem(SteelPlaner, SteelPlaner.getUnlocalizedName());
+        */
+    }
+
+    public static void SetupTabIcon(){
+        ((TFCAdditionsTabs) TFCAdditionsTabs.TFCAdditions_Tab).setTabIconItemStack(new ItemStack(BlockSetup.StoneMMDent, 1, 1));
     }
 }

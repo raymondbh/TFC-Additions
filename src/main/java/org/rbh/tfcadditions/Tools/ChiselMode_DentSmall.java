@@ -74,13 +74,13 @@ public class ChiselMode_DentSmall extends ChiselMode{
 
         int hasChisel = hasChisel(player);
         if( hasChisel >= 0 ){
-            if(id == TFCBlocks.StoneIgIn || id == TFCBlocks.StoneIgInSmooth || id == BlockSetup.StoneIGINDent) {
+            if(id == TFCBlocks.stoneIgIn || id == TFCBlocks.stoneIgInSmooth || id == BlockSetup.StoneIGINDent) {
                 world.setBlock(x, y, z, BlockSetup.StoneIGINDentSmall, meta, 0x2);
-            } else if(id == TFCBlocks.StoneIgEx || id == TFCBlocks.StoneIgExSmooth  || id == BlockSetup.StoneIGEXDent) {
+            } else if(id == TFCBlocks.stoneIgEx || id == TFCBlocks.stoneIgExSmooth  || id == BlockSetup.StoneIGEXDent) {
                 world.setBlock(x, y, z, BlockSetup.StoneIGEXDentSmall, meta, 0x2);
-            } else if(id == TFCBlocks.StoneSed || id == TFCBlocks.StoneSedSmooth || id == BlockSetup.StoneSEDDent) {
+            } else if(id == TFCBlocks.stoneSed || id == TFCBlocks.stoneSedSmooth || id == BlockSetup.StoneSEDDent) {
                 world.setBlock(x, y, z, BlockSetup.StoneSEDDentSmall, meta, 0x2);
-            } else if(id == TFCBlocks.StoneMM || id == TFCBlocks.StoneMMSmooth || id == BlockSetup.StoneMMDent) {
+            } else if(id == TFCBlocks.stoneMM || id == TFCBlocks.stoneMMSmooth || id == BlockSetup.StoneMMDent) {
                 world.setBlock(x, y, z, BlockSetup.StoneMMDentSmall, meta, 0x2);
             }
 

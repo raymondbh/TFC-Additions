@@ -45,7 +45,7 @@ public class CarpentersBlocksHandler {
 
         ChiselManager.getInstance().addChiselMode(new ChiselMode_Slope("Slope"));
 
-        Recipes.RemoveRecipe(BlockRegistry.blockCarpentersBlock.getClass());
+        Recipes.removeRecipe(BlockRegistry.blockCarpentersBlock.getClass());
     }
 
     public static void postInit(){}

@@ -35,8 +35,8 @@ public class KeyBindingHandler {
                     pi.setChiselMode(prevChiselMode(pi));
                     //Let's send the actual ChiselMode so the server/client does not
                     //come out of sync.
-                    AbstractPacket pkt = new KeyPressPacket(pi.ChiselMode);
-                    TerraFirmaCraft.packetPipeline.sendToServer(pkt);
+                    AbstractPacket pkt = new KeyPressPacket(pi.chiselMode);
+                    TerraFirmaCraft.PACKET_PIPELINE.sendToServer(pkt);
 
                 }
             }
@@ -44,9 +44,9 @@ public class KeyBindingHandler {
     }
     public byte prevChiselMode(PlayerInfo pi){
 
-        if(pi.ChiselMode == 0)
+        if(pi.chiselMode == 0)
             return (byte)(ChiselManager.getInstance().getSize() - 1);
 
-        return --pi.ChiselMode;
+        return --pi.chiselMode;
     }
 }

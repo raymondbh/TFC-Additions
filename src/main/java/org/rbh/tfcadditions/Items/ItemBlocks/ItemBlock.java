@@ -19,14 +19,14 @@ import org.rbh.tfcadditions.Reference.Names;
 public class ItemBlock extends ItemTerraBlock {
     public ItemBlock(Block block){
         super(block);
-        if(block instanceof BlockMMDent) MetaNames = Names.STONE_MM;
-        else if(block instanceof BlockMMDentSmall) MetaNames = Names.STONE_MM;
-        else if(block instanceof BlockIGEXDent) MetaNames = Names.STONE_IGEX;
-        else if(block instanceof BlockIGEXDentSmall) MetaNames = Names.STONE_IGEX;
-        else if(block instanceof BlockIGINDent) MetaNames = Names.STONE_IGIN;
-        else if(block instanceof BlockIGINDentSmall) MetaNames = Names.STONE_IGIN;
-        else if(block instanceof BlockSEDDent) MetaNames = Names.STONE_SED;
-        else if(block instanceof BlockSEDDentSmall) MetaNames = Names.STONE_SED;
-        else if(block instanceof BlockPlankDent) MetaNames = Names.WOOD_ALL;
+        if(block instanceof BlockMMDent) metaNames = Names.STONE_MM;
+        else if(block instanceof BlockMMDentSmall) metaNames = Names.STONE_MM;
+        else if(block instanceof BlockIGEXDent) metaNames = Names.STONE_IGEX;
+        else if(block instanceof BlockIGEXDentSmall) metaNames = Names.STONE_IGEX;
+        else if(block instanceof BlockIGINDent) metaNames = Names.STONE_IGIN;
+        else if(block instanceof BlockIGINDentSmall) metaNames = Names.STONE_IGIN;
+        else if(block instanceof BlockSEDDent) metaNames = Names.STONE_SED;
+        else if(block instanceof BlockSEDDentSmall) metaNames = Names.STONE_SED;
+        else if(block instanceof BlockPlankDent) metaNames = Names.WOOD_ALL;
     }
 }

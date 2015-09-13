@@ -16,15 +16,15 @@ public class ItemBlockPlanks extends ItemTerraBlock {
         super(block);
 
         if(block instanceof BlockPlankDent) {
-            MetaNames = new String[16];
-            System.arraycopy(Names.WOOD_ALL, 0, MetaNames, 0, 16);
+            metaNames = new String[16];
+            System.arraycopy(Names.WOOD_ALL, 0, metaNames, 0, 16);
         }
         else if(block instanceof BlockPlank2Dent) {
-            MetaNames = new String[Names.WOOD_ALL.length - 16];
-            System.arraycopy(Names.WOOD_ALL, 16, MetaNames, 0, Names.WOOD_ALL.length - 16);
+            metaNames = new String[Names.WOOD_ALL.length - 16];
+            System.arraycopy(Names.WOOD_ALL, 16, metaNames, 0, Names.WOOD_ALL.length - 16);
         }
         else if(block instanceof BlockPlanks){
-            MetaNames = ((BlockPlanks) block).getNames();
+            metaNames = ((BlockPlanks) block).getNames();
         }
     }
 }
