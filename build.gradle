@@ -89,12 +89,13 @@ sourceSets {
      }
    }
  }
- //Creates a compiled de-obfuscated jar
+ 
+//Creates a compiled de-obfuscated jar
 task deobfJar(type: Jar) {
     from sourceSets.main.output
     appendix = 'deobf'
 }
- //creates a jar containing only the src
+//creates a jar containing only the src
 task sourceJar(type: Jar) {
     from sourceSets.main.allSource
     appendix = 'src'
@@ -122,6 +123,11 @@ from(sourceSets.main.resources.srcDirs) {
 }
 
 jar {
+    configurations.shade.each { dep ->
+        from(project.zipTree(dep)){
+            exclude 'META-INF', 'META-INF/**', '*.info'
+        }
+    }
 }
 
 task wrapper(type: Wrapper) {

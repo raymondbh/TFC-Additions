@@ -10,6 +10,9 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.GameSettings;
 import net.minecraft.client.settings.KeyBinding;
+import net.minecraft.item.ItemStack;
+import org.rbh.tfcadditions.Blocks.BlockSetup;
+import org.rbh.tfcadditions.Core.TFCAdditionsTabs;
 import org.rbh.tfcadditions.Handlers.KeyBindingHandler;
 import org.rbh.tfcadditions.Utility.CarpentersBlocksHandler;
 import org.rbh.tfcadditions.Utility.NotEnoughItemsHandler;
@@ -40,6 +43,9 @@ public class ClientProxy extends CommonProxy {
 
         if(NotEnoughItemsHandler.isLoaded())
             NotEnoughItemsHandler.HideNEIItems();
+
+        //Setup Creative Tab Icon
+        ((TFCAdditionsTabs) TFCAdditionsTabs.TFCAdditions_Tab).setTabIconItemStack(new ItemStack(BlockSetup.StoneMMDent, 1, 5));
     }
 
     @Override

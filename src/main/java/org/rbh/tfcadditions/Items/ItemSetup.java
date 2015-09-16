@@ -1,13 +1,5 @@
 package org.rbh.tfcadditions.Items;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import org.rbh.tfcadditions.Blocks.BlockSetup;
-import org.rbh.tfcadditions.Core.TFCAdditionsTabs;
-import org.rbh.tfcadditions.Items.Tools.ItemPlaner;
-
-import com.bioxx.tfc.api.TFCItems;
 
 /**
  * Created by raymond on 07.08.2015.
@@ -52,9 +44,5 @@ public class ItemSetup {
         GameRegistry.registerItem(RedSteelPlaner, RedSteelPlaner.getUnlocalizedName());
         GameRegistry.registerItem(SteelPlaner, SteelPlaner.getUnlocalizedName());
         */
-    }
-
-    public static void SetupTabIcon(){
-        ((TFCAdditionsTabs) TFCAdditionsTabs.TFCAdditions_Tab).setTabIconItemStack(new ItemStack(BlockSetup.StoneMMDent, 1, 1));
     }
 }
