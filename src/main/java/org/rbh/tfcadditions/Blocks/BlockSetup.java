@@ -2,6 +2,7 @@ package org.rbh.tfcadditions.Blocks;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import org.rbh.tfcadditions.Api.Blocks;
 import org.rbh.tfcadditions.Blocks.Dent.BlockIGEXDent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockIGINDent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockMMDent;
@@ -20,33 +21,8 @@ import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlockPlanks;
 /**
  * Created by raymondbh on 15.07.2015.
  */
-public class BlockSetup {
-    public static Block StoneMMDent;
-    public static Block StoneMMDentSmall;
+public class BlockSetup extends Blocks {
 
-    public static Block StoneIGEXDent;
-    public static Block StoneIGEXDentSmall;
-
-    public static Block StoneIGINDent;
-    public static Block StoneIGINDentSmall;
-
-    public static Block StoneSEDDent;
-    public static Block StoneSEDDentSmall;
-
-    public static Block PlanksOutline;
-    public static Block PlanksOutline2;
-
-    public static Block PlanksLarge;
-    public static Block PlanksLarge2;
-
-    public static Block PlanksParquet;
-    public static Block PlanksParquet2;
-
-    public static Block PlanksNorm;
-    public static Block PlanksNorm2;
-
-    public static Block PlanksVert;
-    public static Block PlanksVert2;
 
     public static void LoadBlocks(){
         System.out.println(new StringBuilder().append("[TFC-Addition] Loading Blocks").toString());

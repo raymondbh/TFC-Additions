@@ -8,7 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import org.rbh.tfcadditions.Blocks.BlockSetup;
+import org.rbh.tfcadditions.Api.Blocks;
 import org.rbh.tfcadditions.Reference.Reference;
 
 /**
@@ -74,14 +74,14 @@ public class ChiselMode_DentSmall extends ChiselMode{
 
         int hasChisel = hasChisel(player);
         if( hasChisel >= 0 ){
-            if(id == TFCBlocks.stoneIgIn || id == TFCBlocks.stoneIgInSmooth || id == BlockSetup.StoneIGINDent) {
-                world.setBlock(x, y, z, BlockSetup.StoneIGINDentSmall, meta, 0x2);
-            } else if(id == TFCBlocks.stoneIgEx || id == TFCBlocks.stoneIgExSmooth  || id == BlockSetup.StoneIGEXDent) {
-                world.setBlock(x, y, z, BlockSetup.StoneIGEXDentSmall, meta, 0x2);
-            } else if(id == TFCBlocks.stoneSed || id == TFCBlocks.stoneSedSmooth || id == BlockSetup.StoneSEDDent) {
-                world.setBlock(x, y, z, BlockSetup.StoneSEDDentSmall, meta, 0x2);
-            } else if(id == TFCBlocks.stoneMM || id == TFCBlocks.stoneMMSmooth || id == BlockSetup.StoneMMDent) {
-                world.setBlock(x, y, z, BlockSetup.StoneMMDentSmall, meta, 0x2);
+            if(id == TFCBlocks.stoneIgIn || id == TFCBlocks.stoneIgInSmooth || id == Blocks.StoneIGINDent) {
+                world.setBlock(x, y, z, Blocks.StoneIGINDentSmall, meta, 0x2);
+            } else if(id == TFCBlocks.stoneIgEx || id == TFCBlocks.stoneIgExSmooth  || id == Blocks.StoneIGEXDent) {
+                world.setBlock(x, y, z, Blocks.StoneIGEXDentSmall, meta, 0x2);
+            } else if(id == TFCBlocks.stoneSed || id == TFCBlocks.stoneSedSmooth || id == Blocks.StoneSEDDent) {
+                world.setBlock(x, y, z, Blocks.StoneSEDDentSmall, meta, 0x2);
+            } else if(id == TFCBlocks.stoneMM || id == TFCBlocks.stoneMMSmooth || id == Blocks.StoneMMDent) {
+                world.setBlock(x, y, z, Blocks.StoneMMDentSmall, meta, 0x2);
             }
 
             player.inventory.mainInventory[hasChisel].damageItem(1, player);

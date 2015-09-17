@@ -1,6 +1,8 @@
 package org.rbh.tfcadditions.Items;
 
-import com.bioxx.tfc.Items.ItemPlank;
+import com.bioxx.tfc.Items.ItemTerra;
+import com.bioxx.tfc.api.Enums.EnumSize;
+import com.bioxx.tfc.api.Enums.EnumWeight;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -15,14 +17,18 @@ import java.util.List;
 /**
  * Created by raymondbh on 17.09.2015.
  */
-public class ItemPlankPlaned extends ItemPlank {
+public class ItemPlankPlaned extends ItemTerra {
 
     private IIcon[] icons = new IIcon[Names.WOOD_ALL.length];
 
     ItemPlankPlaned(){
         super();
+        this.hasSubtypes = true;
+        this.setMaxDamage(0);
         setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
         this.metaNames = Names.WOOD_ALL.clone();
+        this.setWeight(EnumWeight.LIGHT);
+        this.setSize(EnumSize.MEDIUM);
     }
 
     @Override

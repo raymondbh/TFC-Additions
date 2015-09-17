@@ -3,25 +3,13 @@ package org.rbh.tfcadditions.Items;
 
 import com.bioxx.tfc.api.TFCItems;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.item.Item;
+import org.rbh.tfcadditions.Api.Items;
 import org.rbh.tfcadditions.Items.Tools.ItemPlaner;
 
 /**
  * Created by raymond on 07.08.2015.
  */
-public class ItemSetup {
-
-    public static Item BismuthBronzePlaner;
-    public static Item BlackBronzePlaner;
-    public static Item BlackSteelPlaner;
-    public static Item BlueSteelPlaner;
-    public static Item BronzePlaner;
-    public static Item CopperPlaner;
-    public static Item WroughtIronPlaner;
-    public static Item RedSteelPlaner;
-    public static Item SteelPlaner;
-
-    public static Item PlankPlaned;
+public class ItemSetup extends Items {
 
     public static void LoadItems(){
         BismuthBronzePlaner = new ItemPlaner(TFCItems.bismuthBronzeToolMaterial).setUnlocalizedName("Bismuth Bronze Planer").setMaxDamage(TFCItems.bismuthBronzeUses);
