@@ -1,6 +1,5 @@
 package org.rbh.tfcadditions.Core;
 
-import com.bioxx.tfc.api.TFCBlocks;
 import com.bioxx.tfc.api.TFCItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;

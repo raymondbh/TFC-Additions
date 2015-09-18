@@ -3,6 +3,8 @@ package org.rbh.tfcadditions.Items.Tools;
 import com.bioxx.tfc.Items.Tools.ItemTerraTool;
 import com.bioxx.tfc.api.Enums.EnumItemReach;
 import com.bioxx.tfc.api.Enums.EnumSize;
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -34,5 +36,11 @@ public class ItemPlaner extends ItemTerraTool {
     @Override
     public void registerIcons(IIconRegister registerer){
         this.itemIcon = registerer.registerIcon(Reference.ModID + ":" + "tools/" + "Wood Planer");
+    }
+
+    @Override
+    public Multimap getItemAttributeModifiers()
+    {
+        return HashMultimap.create();
     }
 }

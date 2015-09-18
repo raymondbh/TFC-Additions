@@ -41,8 +41,8 @@ public class ClientProxy extends CommonProxy {
         if(CarpentersBlocksHandler.isLoaded())
             CarpentersBlocksHandler.Init();
 
-        if(NotEnoughItemsHandler.isLoaded())
-            NotEnoughItemsHandler.HideNEIItems();
+        //if(NotEnoughItemsHandler.isLoaded())
+        //    NotEnoughItemsHandler.HideNEIItems();
 
         //Setup Creative Tab Icon
         ((CreativeTabs) CreativeTabs.TFCAdditions_Tab).setTabIconItemStack(new ItemStack(BlockSetup.StoneMMDent, 1, 5));
