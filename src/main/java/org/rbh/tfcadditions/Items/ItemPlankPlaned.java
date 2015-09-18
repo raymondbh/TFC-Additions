@@ -4,11 +4,10 @@ import com.bioxx.tfc.Items.ItemTerra;
 import com.bioxx.tfc.api.Enums.EnumSize;
 import com.bioxx.tfc.api.Enums.EnumWeight;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-import org.rbh.tfcadditions.Core.TFCAdditionsTabs;
+import org.rbh.tfcadditions.Core.CreativeTabs;
 import org.rbh.tfcadditions.Reference.Names;
 import org.rbh.tfcadditions.Reference.Reference;
 
@@ -25,7 +24,7 @@ public class ItemPlankPlaned extends ItemTerra {
         super();
         this.hasSubtypes = true;
         this.setMaxDamage(0);
-        setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        setCreativeTab(CreativeTabs.TFCAdditions_Tab);
         this.metaNames = Names.WOOD_ALL.clone();
         this.setWeight(EnumWeight.LIGHT);
         this.setSize(EnumSize.MEDIUM);
@@ -46,7 +45,7 @@ public class ItemPlankPlaned extends ItemTerra {
     }
 
     @Override
-    public void getSubItems(Item par1, CreativeTabs par2CreativeTabs, List list)
+    public void getSubItems(Item par1, net.minecraft.creativetab.CreativeTabs par2CreativeTabs, List list)
     {
         for(int i = 0; i < Names.WOOD_ALL.length; i++) {
             list.add(new ItemStack(this,1,i));

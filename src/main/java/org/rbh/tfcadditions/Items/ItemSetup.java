@@ -3,7 +3,9 @@ package org.rbh.tfcadditions.Items;
 
 import com.bioxx.tfc.api.TFCItems;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
 import org.rbh.tfcadditions.Api.Items;
+import org.rbh.tfcadditions.Core.Recipes;
 import org.rbh.tfcadditions.Items.Tools.ItemPlaner;
 
 /**
@@ -37,5 +39,7 @@ public class ItemSetup extends Items {
         GameRegistry.registerItem(SteelPlaner, SteelPlaner.getUnlocalizedName());
 
         GameRegistry.registerItem(PlankPlaned, PlankPlaned.getUnlocalizedName());
+
+        Recipes.planers = new Item[]{BismuthBronzePlaner,BlackBronzePlaner,BlackSteelPlaner,BlueSteelPlaner,BronzePlaner,CopperPlaner,WroughtIronPlaner,RedSteelPlaner,SteelPlaner};
     }
 }

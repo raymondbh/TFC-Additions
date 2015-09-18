@@ -14,7 +14,7 @@ import org.rbh.tfcadditions.Blocks.DentSmall.BlockSEDDentSmall;
 import org.rbh.tfcadditions.Blocks.Dent.BlockPlank2Dent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockPlankDent;
 import org.rbh.tfcadditions.Blocks.Planks.*;
-import org.rbh.tfcadditions.Core.TFCAdditionsTabs;
+import org.rbh.tfcadditions.Core.CreativeTabs;
 import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlock;
 import org.rbh.tfcadditions.Items.ItemBlocks.ItemBlockPlanks;
 
@@ -27,32 +27,32 @@ public class BlockSetup extends Blocks {
     public static void LoadBlocks(){
         System.out.println(new StringBuilder().append("[TFC-Addition] Loading Blocks").toString());
 
-        StoneMMDent = new BlockMMDent().setHardness(15F).setBlockName("MMRockDent").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
-        StoneMMDentSmall = new BlockMMDentSmall().setHardness(15F).setBlockName("MMRockDentSmall").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        StoneMMDent = new BlockMMDent().setHardness(15F).setBlockName("MMRockDent").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        StoneMMDentSmall = new BlockMMDentSmall().setHardness(15F).setBlockName("MMRockDentSmall").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
 
-        StoneIGEXDent = new BlockIGEXDent().setHardness(16F).setBlockName("IgExRockDent").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
-        StoneIGEXDentSmall = new BlockIGEXDentSmall().setHardness(16F).setBlockName("IgExRockDentSmall").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        StoneIGEXDent = new BlockIGEXDent().setHardness(16F).setBlockName("IgExRockDent").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        StoneIGEXDentSmall = new BlockIGEXDentSmall().setHardness(16F).setBlockName("IgExRockDentSmall").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
 
-        StoneIGINDent = new BlockIGINDent().setHardness(16F).setBlockName("IgInRockDent").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
-        StoneIGINDentSmall = new BlockIGINDentSmall().setHardness(16F).setBlockName("IgInRockDentSmall").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        StoneIGINDent = new BlockIGINDent().setHardness(16F).setBlockName("IgInRockDent").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        StoneIGINDentSmall = new BlockIGINDentSmall().setHardness(16F).setBlockName("IgInRockDentSmall").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
 
-        StoneSEDDent = new BlockSEDDent().setHardness(16F).setBlockName("SedRockDent").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
-        StoneSEDDentSmall = new BlockSEDDentSmall().setHardness(16F).setBlockName("SedRockDentSmall").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        StoneSEDDent = new BlockSEDDent().setHardness(16F).setBlockName("SedRockDent").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        StoneSEDDentSmall = new BlockSEDDentSmall().setHardness(16F).setBlockName("SedRockDentSmall").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
 
-        PlanksOutline = new BlockPlankDent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
-        PlanksOutline2 = new BlockPlank2Dent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline2").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        PlanksOutline = new BlockPlankDent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        PlanksOutline2 = new BlockPlank2Dent().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksOutline2").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
 
-        PlanksLarge = new BlockPlanksLarge().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
-        PlanksLarge2 = new BlockPlanksLarge2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge2").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        PlanksLarge = new BlockPlanksLarge().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        PlanksLarge2 = new BlockPlanksLarge2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksLarge2").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
 
-        PlanksParquet = new BlockPlanksParquet().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksParquet").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
-        PlanksParquet2 = new BlockPlanksParquet2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksParquet2").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        PlanksParquet = new BlockPlanksParquet().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksParquet").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        PlanksParquet2 = new BlockPlanksParquet2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksParquet2").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
 
-        PlanksNorm = new BlockPlanksNorm().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksNorm").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
-        PlanksNorm2 = new BlockPlanksNorm2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksNorm2").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        PlanksNorm = new BlockPlanksNorm().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksNorm").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        PlanksNorm2 = new BlockPlanksNorm2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksNorm2").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
 
-        PlanksVert = new BlockPlanksVert().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksVert").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
-        PlanksVert2 = new BlockPlanksVert2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksVert2").setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        PlanksVert = new BlockPlanksVert().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksVert").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        PlanksVert2 = new BlockPlanksVert2().setHardness(4.0F).setResistance(5.0F).setStepSound(Block.soundTypeWood).setBlockName("PlanksVert2").setCreativeTab(CreativeTabs.TFCAdditions_Tab);
 
         StoneMMDent.setHarvestLevel("pickaxe", 0);
         StoneMMDentSmall.setHarvestLevel("pickaxe", 0);

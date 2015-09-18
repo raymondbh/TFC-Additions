@@ -3,22 +3,21 @@ package org.rbh.tfcadditions.Core;
 import com.bioxx.tfc.Core.TFCTabs;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 /**
  * Created by rbh on 13.09.2015.
  */
-public class TFCAdditionsTabs extends TFCTabs {
+public class CreativeTabs extends TFCTabs {
 
-    public static final CreativeTabs TFCAdditions_Tab = new TFCAdditionsTabs("TFCAdditions");
+    public static final net.minecraft.creativetab.CreativeTabs TFCAdditions_Tab = new CreativeTabs("TFCAdditions");
 
     private ItemStack is;
 
-    public TFCAdditionsTabs(String par2Str){ super(par2Str);}
+    public CreativeTabs(String par2Str){ super(par2Str);}
 
-    public TFCAdditionsTabs(String par2Str, int icon) {
+    public CreativeTabs(String par2Str, int icon) {
         super(par2Str, icon);
     }
 

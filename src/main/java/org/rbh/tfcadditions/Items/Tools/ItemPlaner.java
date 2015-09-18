@@ -7,7 +7,7 @@ import com.google.common.collect.Sets;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
-import org.rbh.tfcadditions.Core.TFCAdditionsTabs;
+import org.rbh.tfcadditions.Core.CreativeTabs;
 import org.rbh.tfcadditions.Reference.Reference;
 
 /**
@@ -18,7 +18,7 @@ public class ItemPlaner extends ItemTerraTool {
     public ItemPlaner(ToolMaterial e){
         super(0F, e, Sets.newHashSet(new Block[]{}));
         this.setMaxDamage(e.getMaxUses());
-        setCreativeTab(TFCAdditionsTabs.TFCAdditions_Tab);
+        setCreativeTab(CreativeTabs.TFCAdditions_Tab);
     }
     @Override
     public EnumSize getSize(ItemStack is)
