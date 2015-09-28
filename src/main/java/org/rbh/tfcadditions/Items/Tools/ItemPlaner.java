@@ -12,13 +12,17 @@ import net.minecraft.item.ItemStack;
 import org.rbh.tfcadditions.Core.CreativeTabs;
 import org.rbh.tfcadditions.Reference.Reference;
 
+import java.util.Set;
+
 /**
  * Created by raymond on 07.08.2015.
  */
 public class ItemPlaner extends ItemTerraTool {
 
+    private static final Set<Block> BLOCKS = Sets.newHashSet(new Block[] {});
+
     public ItemPlaner(ToolMaterial e){
-        super(0F, e, Sets.newHashSet(new Block[]{}));
+        super(0F, e, BLOCKS);
         this.setMaxDamage(e.getMaxUses());
         setCreativeTab(CreativeTabs.TFCAdditions_Tab);
     }
