@@ -7,6 +7,8 @@
 
 itemGroup.TFCAdditions=TFC Additions
 
+key.PrevChiselMode=Previous Chisel Mode
+
 tile.MMRockDent.Gneiss.name=Gneiss with Outline
 tile.MMRockDent.Marble.name=Marble with Outline
 tile.MMRockDent.Phyllite.name=Phyllite with Outline

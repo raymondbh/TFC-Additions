@@ -10,6 +10,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import org.rbh.tfcadditions.Api.Blocks;
 import org.rbh.tfcadditions.Reference.Reference;
+import org.rbh.tfcadditions.TFCAdditions;
 
 /**
  * Created by raymondbh on 15.07.2015.
@@ -32,10 +33,12 @@ public class ChiselMode_Dent extends ChiselMode {
     }
 
     public int getTexture_u(){
+        //TFCAdditions.LOG.info(new StringBuilder().append("Returning Chisel Mode Dent U value.").toString());
         return texture_u;
     }
 
     public int getTexture_v(){
+        //TFCAdditions.LOG.info(new StringBuilder().append("Returning Chisel Mode Dent V value.").toString());
         return texture_v;
     }
 

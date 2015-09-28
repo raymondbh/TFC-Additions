@@ -9,6 +9,8 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import org.rbh.tfcadditions.Proxy.CommonProxy;
 import org.rbh.tfcadditions.Reference.Reference;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Created by raymondbh on 15.07.2015.
@@ -16,6 +18,8 @@ import org.rbh.tfcadditions.Reference.Reference;
 
 @Mod(modid = Reference.ModID, name = Reference.ModName, version = Reference.ModVersion, dependencies = Reference.ModDependencies)
 public class TFCAdditions {
+
+    public static final Logger LOG = LogManager.getLogger(Reference.ModID);
 
     @Instance(Reference.ModID)
     public static TFCAdditions instance;

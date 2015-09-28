@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import org.rbh.tfcadditions.Api.Items;
 import org.rbh.tfcadditions.Core.Recipes;
 import org.rbh.tfcadditions.Items.Tools.ItemPlaner;
+import org.rbh.tfcadditions.TFCAdditions;
 
 /**
  * Created by raymond on 07.08.2015.
@@ -14,6 +15,8 @@ import org.rbh.tfcadditions.Items.Tools.ItemPlaner;
 public class ItemSetup extends Items {
 
     public static void LoadItems(){
+        TFCAdditions.LOG.info(new StringBuilder().append("Loading Items").toString());
+
         BismuthBronzePlaner = new ItemPlaner(TFCItems.bismuthBronzeToolMaterial).setUnlocalizedName("Bismuth Bronze Planer").setMaxDamage(TFCItems.bismuthBronzeUses);
         BlackBronzePlaner = new ItemPlaner(TFCItems.blackBronzeToolMaterial).setUnlocalizedName("Black Bronze Planer").setMaxDamage(TFCItems.blackBronzeUses);
         BlackSteelPlaner = new ItemPlaner(TFCItems.blackSteelToolMaterial).setUnlocalizedName("Black Steel Planer").setMaxDamage(TFCItems.blackSteelUses);
@@ -28,6 +31,8 @@ public class ItemSetup extends Items {
     }
 
     public static void RegisterItems(){
+        TFCAdditions.LOG.info(new StringBuilder().append("Register Items").toString());
+
         GameRegistry.registerItem(BismuthBronzePlaner, BismuthBronzePlaner.getUnlocalizedName());
         GameRegistry.registerItem(BlackBronzePlaner, BlackBronzePlaner.getUnlocalizedName());
         GameRegistry.registerItem(BlackSteelPlaner, BlackSteelPlaner.getUnlocalizedName());
