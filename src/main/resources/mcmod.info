@@ -13,8 +13,8 @@
     "logoFile": "",
     "screenshots": [  ],
     "parent": "",
-    "requiredMods": [ "terrafirmacraft" ],
-    "dependencies": ["Forge@[10.13.4.1448,)"],
+    "requiredMods": [ "terrafirmacraft", "CarpentersBlocks", "NotEnoughItems" ],
+    "dependencies": ["Forge@[10.13.4.1448,)", "terrafirmacraft", "CarpentersBlocks", "NotEnoughItems"],
     "dependants": [  ],
     "useDependencyInformation": "true"
   }]
