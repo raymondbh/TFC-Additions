@@ -16,7 +16,7 @@ import org.apache.logging.log4j.Logger;
  * Created by raymondbh on 15.07.2015.
  */
 
-@Mod(modid = Reference.ModID, name = Reference.ModName, version = Reference.ModVersion, dependencies = Reference.ModDependencies)
+@Mod(modid = Reference.ModID, name = Reference.ModName, version = Reference.ModVersion)
 public class TFCAdditions {
 
     public static final Logger LOG = LogManager.getLogger(Reference.ModID);
