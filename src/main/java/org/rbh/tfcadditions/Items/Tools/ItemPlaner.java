@@ -24,7 +24,7 @@ public class ItemPlaner extends ItemTerraTool {
     public ItemPlaner(ToolMaterial e){
         super(0F, e, BLOCKS);
         this.setMaxDamage(e.getMaxUses());
-        setCreativeTab(CreativeTabs.TFCAdditions_Tab);
+        this.setCreativeTab(CreativeTabs.TFCAdditions_Tab);
     }
     @Override
     public EnumSize getSize(ItemStack is)
