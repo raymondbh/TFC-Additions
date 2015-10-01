@@ -2,7 +2,9 @@ package org.rbh.tfcadditions.Blocks.CarpentersBlocks;
 
 import com.bioxx.tfc.Items.Tools.ItemChisel;
 import com.bioxx.tfc.Items.Tools.ItemHammer;
+import com.bioxx.tfc.api.Tools.IToolChisel;
 import com.carpentersblocks.block.BlockCoverable;
+import com.carpentersblocks.util.registry.ItemRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.material.Material;
@@ -29,7 +31,7 @@ public class TFCBlockCoverable extends BlockCoverable {
      * Stores actions taken on a block in order to properly play sounds,
      * decrement player inventory, and to determine if a block was altered.
      */
-    protected class ActionResult {
+    protected class ActionResult extends BlockCoverable.ActionResult {
 
         public ItemStack itemStack;
         public boolean playSound = true;
@@ -82,7 +84,7 @@ public class TFCBlockCoverable extends BlockCoverable {
 
         if (TE == null) {
             return;
-        } else if (!PlayerPermissions.canPlayerEdit(TE, TE.xCoord, TE.yCoord, TE.zCoord, entityPlayer)) {
+        } else if (!PlayerPermissions.hasElevatedPermission(TE, entityPlayer)) {
             return;
         }
 
@@ -98,7 +100,7 @@ public class TFCBlockCoverable extends BlockCoverable {
         if (item instanceof ItemHammer) {
 
             ActionResult actionResult = new ActionResult();
-            //preOnBlockClicked(TE, world, x, y, z, entityPlayer, actionResult);
+            preOnBlockClicked(TE, world, x, y, z, entityPlayer, actionResult);
 
             if (!actionResult.altered) {
                 if (entityPlayer.isSneaking()) {
@@ -129,19 +131,20 @@ public class TFCBlockCoverable extends BlockCoverable {
      * @param TE
      * @param side
      */
-    private void popAttribute(TEBase TE, int side)
-    {
-        if (TE.hasAttribute(TE.ATTR_ILLUMINATOR)) {
-            TE.createBlockDropEvent(TE.ATTR_ILLUMINATOR);
-        } else if (TE.hasAttribute(TE.ATTR_OVERLAY[side])) {
-            TE.createBlockDropEvent(TE.ATTR_OVERLAY[side]);
-        } else if (TE.hasAttribute(TE.ATTR_DYE[side])) {
-            TE.createBlockDropEvent(TE.ATTR_DYE[side]);
-        } else if (TE.hasAttribute(TE.ATTR_COVER[side])) {
+    private void popAttribute(TEBase TE, int side) {
+        if(TE.hasAttribute((byte)21)) {
+            TE.createBlockDropEvent((byte)21);
+        } else if(TE.hasAttribute(TEBase.ATTR_OVERLAY[side])) {
+            TE.createBlockDropEvent(TEBase.ATTR_OVERLAY[side]);
+        } else if(TE.hasAttribute(TEBase.ATTR_DYE[side])) {
+            TE.createBlockDropEvent(TEBase.ATTR_DYE[side]);
+        } else if(TE.hasAttribute(TEBase.ATTR_COVER[side])) {
             TE.removeChiselDesign(side);
-            TE.createBlockDropEvent(TE.ATTR_COVER[side]);
+            TE.createBlockDropEvent(TEBase.ATTR_COVER[side]);
         }
+
     }
+
 
     @Override
     /**
@@ -167,12 +170,12 @@ public class TFCBlockCoverable extends BlockCoverable {
         TE = getTileEntityForBlockActivation(TE);
         ActionResult actionResult = new ActionResult();
 
-        //preOnBlockActivated(TE, entityPlayer, side, hitX, hitY, hitZ, actionResult);
+        preOnBlockActivated(TE, entityPlayer, side, hitX, hitY, hitZ, actionResult);
 
         // If no prior event occurred, try regular activation
         if (!actionResult.altered) {
 
-            if (PlayerPermissions.canPlayerEdit(TE, TE.xCoord, TE.yCoord, TE.zCoord, entityPlayer)) {
+            if (PlayerPermissions.hasElevatedPermission(TE, entityPlayer)) {
 
                 ItemStack itemStack = entityPlayer.getCurrentEquippedItem();
 
@@ -187,7 +190,7 @@ public class TFCBlockCoverable extends BlockCoverable {
                             actionResult.setAltered();
                         }
 
-                    } else if (itemStack.getItem() instanceof ItemChisel) {
+                    } else if (ItemRegistry.enableChisel && itemStack.getItem() instanceof ItemChisel) {
 
                         if (TE.hasAttribute(TE.ATTR_COVER[effectiveSide])) {
                             if (onChiselClick(TE, effectiveSide, false)) {
