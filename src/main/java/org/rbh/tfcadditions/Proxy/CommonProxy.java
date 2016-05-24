@@ -31,8 +31,8 @@ public class CommonProxy {
 
         Recipes.registerRecipes();
 
-        if(CarpentersBlocksHandler.isLoaded())
-            CarpentersBlocksHandler.preInit();
+        //if(CarpentersBlocksHandler.isLoaded())
+        //    CarpentersBlocksHandler.preInit();
     }
 
     public void Init(FMLInitializationEvent event){

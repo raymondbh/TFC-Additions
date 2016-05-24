@@ -38,8 +38,8 @@ public class ClientProxy extends CommonProxy {
         CTMRendrerID = RenderingRegistry.getNextAvailableRenderId();
         RenderingRegistry.registerBlockHandler(new CTMRenderer(CTMRendrerID));
 
-        if(CarpentersBlocksHandler.isLoaded())
-            CarpentersBlocksHandler.Init();
+        //if(CarpentersBlocksHandler.isLoaded())
+        //    CarpentersBlocksHandler.Init();
 
         //if(NotEnoughItemsHandler.isLoaded())
         //    NotEnoughItemsHandler.HideNEIItems();

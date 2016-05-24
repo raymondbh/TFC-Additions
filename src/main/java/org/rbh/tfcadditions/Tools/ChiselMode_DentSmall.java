@@ -10,7 +10,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import org.rbh.tfcadditions.Api.Blocks;
 import org.rbh.tfcadditions.Reference.Reference;
-import org.rbh.tfcadditions.TFCAdditions;
 
 /**
  * Created by rbh on 31.07.2015.
@@ -28,20 +27,22 @@ public class ChiselMode_DentSmall extends ChiselMode{
         div = 1;
     }
 
+    @Override
     public ResourceLocation getResourceLocation(){
         return resourcelocation;
     }
 
-    public int getTexture_u(){
-        //TFCAdditions.LOG.info(new StringBuilder().append("Returning Chisel Mode Small Dent U value.").toString());
+    @Override
+    public int getTextureU(){
         return texture_u;
     }
 
-    public int getTexture_v(){
-        //TFCAdditions.LOG.info(new StringBuilder().append("Returning Chisel Mode Small Dent V value.").toString());
+    @Override
+    public int getTextureV(){
         return texture_v;
     }
 
+    @Override
     public int getDivX(Block block){
         if(block instanceof BlockStone){
             return div;
@@ -51,6 +52,7 @@ public class ChiselMode_DentSmall extends ChiselMode{
         }
     }
 
+    @Override
     public int getDivY(Block block){
         if(block instanceof BlockStone){
             return div;
@@ -60,6 +62,7 @@ public class ChiselMode_DentSmall extends ChiselMode{
         }
     }
 
+    @Override
     public int getDivZ(Block block){
         if(block instanceof BlockStone){
             return div;
@@ -69,6 +72,7 @@ public class ChiselMode_DentSmall extends ChiselMode{
         }
     }
 
+    @Override
     public boolean onUsedHandler(World world, EntityPlayer player, int x, int y, int z, Block id, int meta, int side, float hitX, float hitY, float hitZ){
 
         if(TFC_Core.isNaturalStone(world.getBlock(x, y + 1, z)) && TFC_Core.isNaturalStone(world.getBlock(x, y+2, z))) {
