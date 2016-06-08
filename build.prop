@@ -6,4 +6,4 @@ mod_version_rev=5
 release=stable
 mod_id=TFC-Additions
 group_name=org.rbh.tfcadditions
-ctmlib_version=1.2.0-7
+ctmlib_version=d0a5d2c-3

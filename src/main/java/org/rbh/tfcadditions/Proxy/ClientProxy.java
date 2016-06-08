@@ -1,7 +1,7 @@
 package org.rbh.tfcadditions.Proxy;
 
 import com.bioxx.tfc.api.Util.KeyBindings;
-import com.cricketcraft.ctmlib.CTMRenderer;
+import team.chisel.ctmlib.CTMRenderer;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;

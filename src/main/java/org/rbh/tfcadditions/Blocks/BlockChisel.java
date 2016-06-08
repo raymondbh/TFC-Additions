@@ -3,8 +3,8 @@ package org.rbh.tfcadditions.Blocks;
 import com.bioxx.tfc.Blocks.BlockTerra;
 import com.bioxx.tfc.Items.Tools.ItemHammer;
 import com.bioxx.tfc.api.Tools.IToolChisel;
-import com.cricketcraft.ctmlib.ICTMBlock;
-import com.cricketcraft.ctmlib.ISubmapManager;
+import team.chisel.ctmlib.ICTMBlock;
+import team.chisel.ctmlib.ISubmapManager;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -27,7 +27,7 @@ import java.util.List;
 /**
  * Created by rbh on 30.07.2015.
  */
-public class BlockChisel extends BlockTerra implements ICTMBlock{
+public class BlockChisel extends BlockTerra implements ICTMBlock {
 
     //@SideOnly(Side.CLIENT)
     private List<SubmapManCTM> manager = new ArrayList<SubmapManCTM>();

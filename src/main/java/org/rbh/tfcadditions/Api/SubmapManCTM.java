@@ -1,8 +1,8 @@
 package org.rbh.tfcadditions.Api;
 
-import com.cricketcraft.ctmlib.RenderBlocksCTM;
-import com.cricketcraft.ctmlib.SubmapManagerCTM;
-import com.cricketcraft.ctmlib.TextureSubmap;
+import team.chisel.ctmlib.RenderBlocksCTM;
+import team.chisel.ctmlib.SubmapManagerCTM;
+import team.chisel.ctmlib.TextureSubmap;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
