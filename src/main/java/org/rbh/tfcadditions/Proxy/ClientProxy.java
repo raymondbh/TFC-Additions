@@ -13,8 +13,8 @@ import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.item.ItemStack;
 import org.rbh.tfcadditions.Blocks.BlockSetup;
 import org.rbh.tfcadditions.Core.CreativeTabs;
+import org.rbh.tfcadditions.Handlers.ConfigHandler;
 import org.rbh.tfcadditions.Handlers.KeyBindingHandler;
-import org.rbh.tfcadditions.Utility.CarpentersBlocksHandler;
 import org.rbh.tfcadditions.Utility.NotEnoughItemsHandler;
 
 /**
@@ -41,8 +41,9 @@ public class ClientProxy extends CommonProxy {
         //if(CarpentersBlocksHandler.isLoaded())
         //    CarpentersBlocksHandler.Init();
 
-        //if(NotEnoughItemsHandler.isLoaded())
-        //    NotEnoughItemsHandler.HideNEIItems();
+        //Hide vanilla blocks in NEI
+        if(NotEnoughItemsHandler.isLoaded() && ConfigHandler.HideNEI == true)
+            NotEnoughItemsHandler.HideNEIItems();
 
         //Setup Creative Tab Icon
         ((CreativeTabs) CreativeTabs.TFCAdditions_Tab).setTabIconItemStack(new ItemStack(BlockSetup.StoneMMDent, 1, 5));

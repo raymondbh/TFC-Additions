@@ -16,4 +16,6 @@ public class Reference {
 
     public static final String AssetPath = "/assets/" + ModID + "/";
     public static final String AssetPathGui = "textures/gui/";
+
+    public static final String GUI_FACTORY = "org.rbh.tfcadditions.Config.GUIFactory";
 }

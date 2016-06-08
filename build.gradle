@@ -45,6 +45,7 @@ minecraft {
         runDir = ""
 	}
 }
+
 configurations {
     shade
     compile.extendsFrom shade
